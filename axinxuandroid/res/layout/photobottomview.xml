@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#262223"
+	android:gravity="center_vertical">
+	<Button android:id="@+id/photobottom_btn_sure"
+		android:layout_width="100dip" android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp"
+		android:layout_alignParentRight="true" android:gravity="center" android:layout_centerVertical="true"
+		android:layout_marginRight="5dip" android:background="@drawable/btn_style_login"
+		android:text="确定(0/9)" android:textColor="#fff" android:textSize="16sp"
+		 />
+	<HorizontalScrollView android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginRight="5dip"
+		android:layout_toLeftOf="@id/photobottom_btn_sure" android:scrollbars="none">
+		<LinearLayout android:layout_width="wrap_content"
+			android:id="@+id/photobottom_mainlay" android:layout_height="fill_parent"
+			android:gravity="center_vertical" android:orientation="horizontal">
+
+		</LinearLayout>
+	</HorizontalScrollView>
+
+</RelativeLayout>
+ 

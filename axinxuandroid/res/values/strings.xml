@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">安心选</string>
+    <string name="piciguanli">批次管理</string>
+    <string name="jltj">添加记录</string>
+    <string name="xzhj">选择环节</string>
+    <string name="saoma">扫码</string>
+    <string name="shengchan">生产</string>
+    <string name="xiaoshou">销售</string>
+    <string name="shouqin">售罄</string>
+ 	<string name="pull_to_refresh">下拉可以刷新</string>
+ 	<string name="addhjbq">请添加您的环节标签</string>
+	<string name="release_to_refresh">释放立即刷新</string>
+	<string name="refreshing">正在刷新…</string>
+	<string name="not_updated_yet">暂未更新过</string>
+	<string name="updated_at">上次更新于%1$s前</string>
+	<string name="updated_just_now">刚刚更新</string>
+	<string name="time_error">时间有问题</string>
+	<string name="scan_prompt_info">请将图像置于方块内</string>
+	<string name="login_yanzhengma">我们已发送验证码到你的手机：</string>
+	
+	 <string name="pull_to_refresh_downpull_label">加载更多&#8230;</string>
+	 <string name="pull_to_refresh_pull_label">下拉更新&#8230;</string>
+    <string name="pull_to_refresh_release_label">释放更新&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">数据加载中&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
+    <string name="scan_text">请对准方框扫描二维码</string>
+    
+    
+    <string name="resend_phone_num_text">重新发送验证码  %1$s</string>
+    
+    
+ 
+    <string name="check_video_status">(正在查询视频状态...)</string>
+    
+    
+       <string name="hint">提示</string>
+    <string name="imageview_content_description"></string>
+    <string name="record_camera_progress_message">正在生成视频…</string>
+    <string name="record_camera_exit_dialog_message">是否放弃这段视频？</string>
+    <string name="record_camera_cancel_dialog_yes">确定</string>
+    <string name="record_camera_cancel_dialog_no">取消</string>
+    <string name="record_video_transcoding_faild">视频生成失败</string>
+    <string name="record_video_connect_camera_faild">摄像头打开失败，请检查是否被其他应用占用。。。</string>
+     <string name="record_video_connect_audio_faild">无法录制音频...</string>
+</resources>

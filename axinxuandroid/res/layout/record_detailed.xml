@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:id="@+id/record_detaile_mainlay" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:background="#ffffff">
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/record_detaile_topview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" anxinxuan:title=""
+		anxinxuan:leftimgsrc="@drawable/icon_back" anxinxuan:rightimgsrc="@drawable/icon_moreop" />
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:layout_marginBottom="45dp"
+			android:orientation="vertical">
+
+			<ListView android:id="@+id/record_detaile_comment_listview"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:fadingEdge="none" android:divider="#E2E2E2"
+				android:dividerHeight="1px" android:fadingEdgeLength="0dp"
+				android:cacheColorHint="#00000000">
+
+			</ListView>
+
+		</LinearLayout>
+
+		<RelativeLayout android:orientation="horizontal"
+			android:layout_width="fill_parent" android:layout_height="50dp"
+			android:layout_alignParentBottom="true" android:background="#D0D1D4"
+			android:paddingTop="0.5dp" android:gravity="center_vertical">
+			<RelativeLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent" 
+				android:background="#fff" android:paddingTop="5dp">
+				<Button android:layout_width="60dp" android:layout_height="fill_parent"
+					android:text="发送" android:background="@drawable/btn_style_login"
+					android:id="@+id/record_detaile_comment_add" android:textSize="16sp" 
+					android:layout_marginRight="5dp" android:layout_marginBottom="3dp"  android:textColor="#fff"
+					android:layout_alignParentRight="true" /> 
+				<EditText android:layout_width="fill_parent" android:layout_marginRight="5dp" android:layout_marginLeft="5dp"
+				     android:layout_marginBottom="3dp"  android:id="@+id/record_detaile_comment_comenttext"
+				     android:paddingLeft="10dp"
+					android:layout_height="fill_parent" android:background="@drawable/send_bg"
+					android:layout_toLeftOf="@id/record_detaile_comment_add" />
+			</RelativeLayout>
+		</RelativeLayout>
+
+	</RelativeLayout>
+</LinearLayout>
+
+
+ 
+ 

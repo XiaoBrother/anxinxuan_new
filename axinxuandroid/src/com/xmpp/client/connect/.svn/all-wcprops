@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect
+END
+ConnectionService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/ConnectionService.java
+END
+ConnectivityReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/ConnectivityReceiver.java
+END
+PhoneStateChangeListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/PhoneStateChangeListener.java
+END
+ServerConnectListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/ServerConnectListener.java
+END
+ServerConnection.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/ServerConnection.java
+END
+ServerConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/ServerConfig.java
+END

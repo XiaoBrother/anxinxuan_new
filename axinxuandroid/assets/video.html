@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE>视频 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ </HEAD>
+
+ <BODY>
+ <center>
+  <div id="youkuplayer" style="width:480px;height:400px;" onclick="YukuAndroid.play()"></div>
+  </center>
+  <script type="text/javascript" src="http://player.youku.com/jsapi"> </script>
+  <script type="text/javascript">
+    player = null;
+    //events:{
+	//	onPlayerReady: function(){
+	//	       player.playVideo();
+	//    }
+	//}
+  //  autoplay: true,
+	function initPlayer(client_id,vid,timestamp,signa){
+ 		player = new YKU.Player('youkuplayer',{
+ 			styleid: '0',
+			client_id: client_id,
+			vid: vid,
+			autoplay: true,
+ 			embsig: '1_'+timestamp+'_'+signa
+ 		});
+ 		
+	}
+	function playVideo() {
+		player.playVideo();
+	}
+	function pauseVideo() {
+		player.pauseVideo();
+	}
+	YukuAndroid.startInitPlayer();
+  </script>
+ </BODY>
+</HTML>

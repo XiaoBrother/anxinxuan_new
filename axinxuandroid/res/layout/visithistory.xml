@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" 
+ 	android:background="@color/page_bg_color" android:orientation="vertical">
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/visithistory_topview" anxinxuan:title="我浏览过的批次"
+		anxinxuan:leftimgsrc="@drawable/icon_back"
+		>
+ 	</com.axinxuandroid.activity.view.CommonTopView>
+	 
+	<com.stay.pull.lib.PullToRefreshDragListView
+		android:id="@+id/visithistory_list" android:layout_width="fill_parent"
+		anxinxuan:mode="pullUpFromBottom" android:layout_height="fill_parent"
+		android:divider="#ddd" android:dividerHeight="0.5dp"
+		android:fadingEdge="none" android:fadingEdgeLength="0dp"
+		android:cacheColorHint="#00000000" android:layout_marginLeft="3dp"
+		android:layout_marginRight="3dp" android:drawSelectorOnTop="false"
+		android:fastScrollEnabled="true" />
+ 
+</LinearLayout>

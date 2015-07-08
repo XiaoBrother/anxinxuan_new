@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <com.axinxuandroid.activity.view.CommonTopView
+         android:id="@+id/timeline_topview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:title=""
+         anxinxuan:rightimgsrc="@drawable/icon_moreop"
+         anxinxuan:leftimgsrc="@drawable/icon_back"
+      />
+    
+      <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             android:stretchColumns="*"
+        >
+        
+       <TableRow>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="#FFFFFF"
+					 >
+ 					<Button android:layout_width="wrap_content" android:id="@+id/timeline_salebtn"
+						android:layout_height="fill_parent" android:gravity="center" android:background="@null"
+						android:textColor="#5D4540" android:text="生产者记录" android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+  				</LinearLayout>
+  				
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="@drawable/tabbg"
+					android:layout_marginLeft="-0.5dp" android:layout_marginRight="-0.5dp"
+					 >
+					<Button android:layout_width="wrap_content" android:id="@+id/timeline_custombtn"
+						android:layout_height="fill_parent" android:gravity="center" android:background="@null"
+						android:textColor="#444" android:text="消费者记录" android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+				</LinearLayout>
+				 
+              
+       </TableRow>
+     
+     </TableLayout>
+        <com.axinxuandroid.activity.view.TimeLineView
+        android:id="@+id/timeline_timelineview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+       />
+       
+     
+
+ 
+    </LinearLayout>

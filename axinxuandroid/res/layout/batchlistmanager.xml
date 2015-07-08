@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="match_parent"
+	android:background="#FFFFFF">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent"  
+ 		android:orientation="vertical" android:layout_marginBottom="55dp">
+
+		<com.axinxuandroid.activity.view.CommonTopView
+			anxinxuan:leftimgsrc="@drawable/icon_scan"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/batchlistmanager_topview" anxinxuan:title="批次管理"
+			 anxinxuan:rightimgsrc="@drawable/icon_addbatch">
+
+		</com.axinxuandroid.activity.view.CommonTopView>
+
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:stretchColumns="*" >
+			<TableRow>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="#FFFFFF"
+					android:id="@+id/batchlistmanager_produre">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textColor="#5D4540" android:text="生产" android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="@drawable/tabbg"
+					android:layout_marginLeft="-0.5dp" android:layout_marginRight="-0.5dp"
+					android:id="@+id/batchlistmanager_sale">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textColor="#444" android:text="销售" android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="@drawable/tabbg"
+					android:id="@+id/batchlistmanager_saleout">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:textColor="#444" android:text="售罄" android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+				</LinearLayout>
+			</TableRow>
+
+		</TableLayout>
+		<LinearLayout android:id="@+id/batchlistmanager_contextlayout"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_marginBottom="3dp">
+			<com.axinxuandroid.activity.view.BatchListView
+				android:id="@+id/batchlistmanager_listview" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+			</com.axinxuandroid.activity.view.BatchListView>
+		</LinearLayout>
+	</LinearLayout>
+	<com.axinxuandroid.activity.view.CommonBottomView
+		android:id="@+id/batchlistmanager_bottom" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+ </RelativeLayout>

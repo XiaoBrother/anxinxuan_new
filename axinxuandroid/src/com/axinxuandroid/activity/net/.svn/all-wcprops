@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net
+END
+UserLoginThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UserLoginThread.java
+END
+CheckVedioStatusThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/CheckVedioStatusThread.java
+END
+LoadTemplateThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadTemplateThread.java
+END
+SaveProustThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/SaveProustThread.java
+END
+UploadVideoThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UploadVideoThread.java
+END
+DownSystemThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/DownSystemThread.java
+END
+LoadUserRecordThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadUserRecordThread.java
+END
+LoadRecordThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadRecordThread.java
+END
+ValidSecurityCodeResultThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/ValidSecurityCodeResultThread.java
+END
+LoadVarietyThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadVarietyThread.java
+END
+LoadNetImgThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadNetImgThread.java
+END
+CheckVersionThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/CheckVersionThread.java
+END
+DeleteCommentThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/DeleteCommentThread.java
+END
+LoadBatchByCodeOrIdThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadBatchByCodeOrIdThread.java
+END
+LoadRecordByIdThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadRecordByIdThread.java
+END
+AdvocateThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/AdvocateThread.java
+END
+UpdateBatchStatusThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UpdateBatchStatusThread.java
+END
+LoadUserInfoThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadUserInfoThread.java
+END
+LoadProustThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadProustThread.java
+END
+RemoveUserFavoriteThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/RemoveUserFavoriteThread.java
+END
+LoadVillageInfoThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadVillageInfoThread.java
+END
+DeleteRecordThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/DeleteRecordThread.java
+END
+UserRegisteThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UserRegisteThread.java
+END
+LoadCommentThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadCommentThread.java
+END
+SaveVilleageDescThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/SaveVilleageDescThread.java
+END
+UploadVilleagePhotoThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UploadVilleagePhotoThread.java
+END
+UpdateBatchStageThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UpdateBatchStageThread.java
+END
+OAuthLoginThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/OAuthLoginThread.java
+END
+TemplateCheckThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/TemplateCheckThread.java
+END
+WeiBoFollowAxxThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/WeiBoFollowAxxThread.java
+END
+LoadUserFavoriteThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadUserFavoriteThread.java
+END
+DeleteProustThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/DeleteProustThread.java
+END
+LoadTableJsonThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadTableJsonThread.java
+END
+LoadBatchLabelThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadBatchLabelThread.java
+END
+SaveCommentThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/SaveCommentThread.java
+END
+SendPhoneValidNumThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/SendPhoneValidNumThread.java
+END
+LoadVareityBatchThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadVareityBatchThread.java
+END
+NetThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/NetThread.java
+END
+LoadUserVilleageThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadUserVilleageThread.java
+END
+AddUserFavoriteThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/AddUserFavoriteThread.java
+END
+UploadNetImgThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UploadNetImgThread.java
+END
+LoadVilleageBatchThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadVilleageBatchThread.java
+END
+AddBatchThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/AddBatchThread.java
+END
+UploadNetMediaThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UploadNetMediaThread.java
+END
+AddVarietyThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/AddVarietyThread.java
+END
+LoadVillagePhotoThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadVillagePhotoThread.java
+END
+NetResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/NetResult.java
+END
+ResetPwdThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/ResetPwdThread.java
+END
+SaveRecordThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/SaveRecordThread.java
+END
+LoadImageQueue.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadImageQueue.java
+END
+LoadUserCommentThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/LoadUserCommentThread.java
+END
+UploadSystemErrorThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/UploadSystemErrorThread.java
+END
+DeleteBatchThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/DeleteBatchThread.java
+END
+NetFinishListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/net/NetFinishListener.java
+END

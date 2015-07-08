@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:gravity="center_horizontal"
+	android:orientation="vertical" android:background="@color/page_bg_color">
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/aboutapp_topview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content"  anxinxuan:leftimgsrc="@drawable/icon_back"
+		anxinxuan:title="关于版本" />
+	<LinearLayout android:padding="1dp" android:layout_width="wrap_content" android:background="#D9D9D9" 
+		android:layout_height="wrap_content" android:layout_marginTop="30dp">
+		<ImageView android:src="@drawable/app" android:scaleType="centerInside" 
+			android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<Button android:layout_width="fill_parent" android:background="@drawable/btn_enable"
+		android:text="升级版本" android:textSize="25sp" android:layout_marginLeft="15dp"
+		android:id="@+id/aboutapp_update" android:layout_marginTop="25dp"
+		android:layout_marginRight="15dp" android:textColor="#ffffff"
+		android:layout_height="55dp" />
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_marginTop="25dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:gravity="center_horizontal"
+		android:layout_height="wrap_content" >
+		<LinearLayout android:layout_width="wrap_content" android:paddingLeft="15dp"   android:paddingRight="15dp" 
+		 android:paddingTop="8dp"   android:paddingBottom="8dp" 
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			android:gravity="center_vertical" android:id="@+id/aboutapp_weibo"
+			android:background="@drawable/btn_white">
+			<ImageView android:scaleType="centerInside" android:src="@drawable/sinaicon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="加关注"
+				android:textColor="#999" android:textSize="20sp" />
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="wrap_content" android:paddingLeft="15dp"   android:paddingRight="15dp" 
+		 android:paddingTop="8dp"   android:paddingBottom="8dp"  android:visibility="gone"
+			android:layout_height="wrap_content" android:layout_alignParentRight="true"
+			android:gravity="center_vertical" android:id="@+id/aboutapp_weixin"
+			android:background="@drawable/btn_white">
+			<ImageView android:scaleType="centerInside" android:src="@drawable/weixinicon"
+				android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			<TextView android:layout_width="wrap_content"
+				android:layout_height="fill_parent" android:text="加关注"
+				android:textColor="#999" android:textSize="20sp" />
+		</LinearLayout>
+
+
+	</RelativeLayout>
+
+
+</LinearLayout>

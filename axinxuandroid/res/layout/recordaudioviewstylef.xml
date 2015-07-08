@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_corners"
+        >
+      
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="65dp"
+        android:background="#D2D4D6" android:paddingTop="15dp"
+        >
+        <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="00:" android:textColor="#fff"
+          android:textSize="25sp" 
+          android:layout_alignParentLeft="true"
+          android:id="@+id/recordaudio_timetextmin"
+          android:layout_marginLeft="10dp"
+         />
+        <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="00" android:textColor="#fff"
+          android:textSize="25sp" 
+          android:layout_toRightOf="@id/recordaudio_timetextmin"
+          android:id="@+id/recordaudio_timetextsec"
+         />
+        <ImageButton
+          android:layout_width="wrap_content" android:layout_alignParentRight="true" android:background="@null"
+          android:layout_height="wrap_content" android:src="@drawable/audiodelete" android:id="@+id/recordaudio_delete"
+           android:layout_marginRight="10dp"
+        />
+        <ImageButton android:layout_width="wrap_content"  android:background="@null" android:id="@+id/recordaudio_play"
+          android:layout_height="wrap_content" android:src="@drawable/audioplay" android:layout_toLeftOf="@id/recordaudio_delete"
+         />
+      </RelativeLayout>  
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:background="#C1C3C6"
+        android:gravity="center_vertical"
+      >
+        <LinearLayout android:id="@+id/recordaudio_timeline"
+          android:layout_width="fill_parent"  android:background="@drawable/audiotimeline"
+          android:layout_height="wrap_content"   
+        />
+        <LinearLayout android:id="@+id/recordaudio_ball"
+          android:layout_width="wrap_content"  android:background="@drawable/audiomoveball"
+          android:layout_height="wrap_content"   android:layout_marginTop="-3dp" 
+          
+        />
+      </RelativeLayout>
+</LinearLayout>

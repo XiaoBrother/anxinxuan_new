@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:background="@color/page_bg_color">
+
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/systemset_topview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" anxinxuan:title="设置上传方式"
+		 anxinxuan:leftimgsrc="@drawable/icon_back"/>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+		android:layout_below="@id/systemset_topview" android:orientation="vertical"
+		android:layout_marginLeft="5dp" android:layout_marginRight="5dp">
+
+
+ 		<RelativeLayout android:layout_height="60dp"
+			android:layout_width="fill_parent" android:layout_marginTop="10dp"
+			android:background="@drawable/shape_corners" android:gravity="center">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:textSize="17sp"
+				android:paddingTop="5dp" android:textColor="#262223" android:gravity="center_vertical"
+				android:background="#ffffff" android:text="图片记录仅在wifi下上传"
+				android:paddingLeft="5dp" />
+			<com.axinxuandroid.activity.view.SlipButton
+				android:id="@+id/systemset_imagewifi" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" anxinxuan:leftmessage="是"
+				anxinxuan:rightmessage="否" android:layout_alignParentRight="true" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="60dp" 
+			android:layout_width="fill_parent" android:layout_marginTop="10dp"
+			android:gravity="center" android:background="@drawable/shape_corners">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:textSize="17sp"
+				android:textColor="#262223" android:background="#ffffff" android:gravity="center_vertical"
+				android:paddingTop="5dp" android:text="音频记录仅在wifi下上传"
+				android:paddingLeft="5dp" />
+			<com.axinxuandroid.activity.view.SlipButton
+				android:id="@+id/systemset_audiowifi" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" anxinxuan:leftmessage="是"
+				anxinxuan:rightmessage="否" android:layout_alignParentRight="true" />
+		</RelativeLayout>
+
+
+		<RelativeLayout android:layout_height="60dp"
+			android:layout_width="fill_parent" android:layout_marginTop="10dp"
+			android:background="@drawable/shape_corners" android:gravity="center">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:textSize="17sp"
+				android:paddingTop="5dp" android:textColor="#262223"  android:gravity="center_vertical"
+				android:background="#ffffff" android:text="视频记录仅在wifi下上传"
+				android:paddingLeft="5dp" />
+			<com.axinxuandroid.activity.view.SlipButton
+				android:id="@+id/systemset_videowifi" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" anxinxuan:leftmessage="是"
+				anxinxuan:rightmessage="否" android:layout_alignParentRight="true" />
+		</RelativeLayout>
+
+
+
+	</LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+     android:layout_width="match_parent"  
+      android:layout_height="match_parent" 
+      android:orientation="vertical" 
+      android:background="#fff"
+      >  
+        
+    <com.example.recorddemo.RecordVideoView
+        android:id="@+id/takevideo_videoview"
+        android:layout_width="fill_parent"   
+        android:layout_height="300dp" 
+         android:layout_alignParentTop="true"
+      /> 
+     <com.example.recorddemo.MyProgressBar  
+       android:id="@+id/takevideo_progressBar"  
+       style="@style/ProgressBar_Mini"  
+       android:layout_width="match_parent"  
+       android:layout_height="wrap_content"   
+       android:progress="100"  android:layout_below="@id/takevideo_videoview"
+       />
+      <RelativeLayout android:layout_width="fill_parent"  android:layout_below="@id/takevideo_progressBar" android:layout_marginTop="20dp"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+		<LinearLayout android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" android:orientation="vertical" android:gravity="center_horizontal">
+ 			  <Button  
+ 		           android:id="@+id/takevideo_start"
+		           android:layout_width="wrap_content" android:background="@drawable/btn_takevideo"
+		           android:layout_height="wrap_content"  android:scaleType="centerInside"
+  		      /> 
+ 		      <LinearLayout    android:layout_width="fill_parent"  android:layout_marginTop="50dp" 
+ 		           android:orientation="horizontal" android:gravity="center"
+		           android:layout_height="wrap_content" > 
+ 		          
+ 		          <Button  
+ 		           android:id="@+id/takevideo_restart" style="@style/common_button_setting"
+		           android:layout_width="150dp"    android:layout_height="50dp"
+		             android:visibility="gone"
+ 		           android:text="重新拍摄" /> 
+		          
+ 		           <Button  
+ 		           android:id="@+id/takevideo_ok"   style="@style/common_button_setting"
+		           android:layout_width="150dp" android:layout_marginLeft="30dp"
+		             android:visibility="gone"  android:layout_height="50dp"
+ 		           android:text="确定" /> 
+ 		      </LinearLayout>
+		     
+  		</LinearLayout>
+
+	</RelativeLayout> 
+	
+</RelativeLayout> 

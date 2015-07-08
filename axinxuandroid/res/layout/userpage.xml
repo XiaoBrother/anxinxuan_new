@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="match_parent"
+	android:background="#ffffff">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent"  
+ 		android:orientation="vertical">
+
+		<com.axinxuandroid.activity.view.CommonTopView
+			anxinxuan:leftimgsrc="@drawable/icon_back"
+		    anxinxuan:rightimgsrc="@drawable/icon_moreop"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:id="@+id/userpage_topview"  
+			>
+ 		</com.axinxuandroid.activity.view.CommonTopView>
+
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:stretchColumns="*"  >
+			<TableRow>
+			
+			<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="#FFFFFF"
+					>
+ 					<Button android:layout_width="wrap_content" android:id="@+id/userpage_info"
+						android:layout_height="fill_parent" android:gravity="center" android:background="@null"
+						android:textColor="#5D4540" android:text="个人资料" android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+  				</LinearLayout>
+  				
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="@drawable/tabbg"
+					android:layout_marginLeft="-0.5dp" android:layout_marginRight="-0.5dp"
+					>
+					<Button android:layout_width="wrap_content" android:id="@+id/userpage_record"
+						android:layout_height="fill_parent" android:gravity="center" android:background="@null"
+						android:textColor="#444" android:text="记录" android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+				</LinearLayout>
+			 
+				
+				<!-- <LinearLayout android:layout_width="fill_parent"  
+					android:layout_height="fill_parent" android:orientation="horizontal"
+					android:gravity="center" android:background="@drawable/btnbg_normal"
+					android:layout_marginLeft="0.5dp" android:layout_marginRight="0.5dp"
+					android:id="@+id/userpage_advocate">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:gravity="center"
+						android:textColor="#8b7867" android:text="赞过" android:textSize="20sp" />
+ 				</LinearLayout> -->
+				 
+			</TableRow>
+
+		</TableLayout>
+		<LinearLayout android:id="@+id/userpage_contextlayout"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_marginBottom="3dp">
+			 <com.axinxuandroid.activity.view.UserInfoView
+			    android:layout_width="fill_parent" android:layout_height="fill_parent"
+			    android:id="@+id/userpage_infoview"  
+			 />
+			  <com.axinxuandroid.activity.view.TimeLineView android:visibility="gone"
+			    android:layout_width="fill_parent" android:layout_height="fill_parent"
+			    android:id="@+id/userpage_userrecordview"
+			 />
+		</LinearLayout>
+	</LinearLayout>
+	 
+ </RelativeLayout>

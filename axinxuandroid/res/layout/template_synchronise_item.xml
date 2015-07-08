@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="horizontal" android:clickable="true">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="50dp" android:gravity="center_vertical"
+		>
+		<TextView android:layout_width="wrap_content"
+		android:id="@+id/tempate_synch_item_text"
+			android:layout_height="wrap_content" android:padding="8dp"
+			  android:textSize="17sp" android:textColor="#000" />
+		<ImageView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:scaleType="matrix"
+			android:layout_centerVertical="true" android:layout_alignParentRight="true"
+			android:src="@drawable/mm_submenu" />
+	</RelativeLayout>
+</LinearLayout>

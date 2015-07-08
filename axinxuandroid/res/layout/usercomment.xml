@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="match_parent"  android:id="@+id/usercomment_root"
+	android:background="#ffffff">
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:orientation="vertical">
+
+		<com.axinxuandroid.activity.view.CommonTopView anxinxuan:title="我的评论"
+			anxinxuan:leftimgsrc="@drawable/icon_back" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:id="@+id/usercomment_topview">
+		</com.axinxuandroid.activity.view.CommonTopView>
+
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:gravity="center"
+			android:stretchColumns="*">
+			<TableRow>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="#FFFFFF">
+					<Button android:layout_width="wrap_content" android:id="@+id/usercomment_receive"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:background="@null" android:textColor="#5D4540"
+						android:text="收到的评论" android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="50dp" android:orientation="horizontal"
+					android:gravity="center" android:background="@drawable/tabbg"
+					android:layout_marginLeft="-0.5dp" android:layout_marginRight="-0.5dp">
+					<Button android:layout_width="wrap_content" android:id="@+id/usercomment_send"
+						android:layout_height="fill_parent" android:gravity="center"
+						android:background="@null" android:textColor="#444" android:text="发出的评论"
+						android:textSize="20sp" />
+					<ImageView android:layout_width="wrap_content"
+						android:visibility="gone" android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content" android:src="@drawable/hotdian" />
+				</LinearLayout>
+
+
+
+			</TableRow>
+
+		</TableLayout>
+	
+		<LinearLayout android:id="@+id/usercomment_contextlayout"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:orientation="vertical" android:layout_marginBottom="3dp">
+
+			<com.stay.pull.lib.PullToRefreshDragListView
+				android:id="@+id/usercomment_receiveview" android:layout_width="fill_parent"
+				anxinxuan:mode="pullUpFromBottom" android:layout_height="fill_parent"
+				android:divider="#ddd" android:dividerHeight="0.5dp"
+				android:fadingEdge="none" android:fadingEdgeLength="0dp"
+				android:cacheColorHint="#00000000"  
+				android:drawSelectorOnTop="false" android:fastScrollEnabled="true" />
+			<com.stay.pull.lib.PullToRefreshDragListView
+				android:id="@+id/usercomment_sendview" android:layout_width="fill_parent"
+				anxinxuan:mode="pullUpFromBottom" android:layout_height="fill_parent"
+				android:divider="#ddd" android:dividerHeight="0.5dp"
+				android:fadingEdge="none" android:fadingEdgeLength="0dp"
+				android:cacheColorHint="#00000000"  
+				android:drawSelectorOnTop="false" android:fastScrollEnabled="true" />
+
+		</LinearLayout>
+	</LinearLayout>
+
+</RelativeLayout>

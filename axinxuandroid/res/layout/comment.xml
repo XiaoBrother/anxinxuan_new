@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" android:orientation="vertical"
+    >
+    <com.axinxuandroid.activity.view.CommonTopView
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:title="发评论"
+         android:id="@+id/comment_topview"
+         anxinxuan:leftimgsrc="@drawable/icon_back"
+         anxinxuan:righttext="发布"
+       >
+      </com.axinxuandroid.activity.view.CommonTopView>
+     <LinearLayout
+         android:orientation="vertical"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content" android:layout_marginLeft="15dp"  android:layout_marginRight="15dp"  
+       android:layout_marginTop="15dp"  
+      >
+        <FrameLayout android:layout_width="fill_parent"
+				 android:layout_height="160dp">
+				<ImageView   android:layout_width="fill_parent"  android:layout_height="fill_parent"
+				   android:background="@drawable/edittext_bg"
+				 ></ImageView>
+				<EditText android:id="@+id/comment_editcomment" android:layout_width="fill_parent"
+					android:layout_height="fill_parent" android:paddingLeft="10dp"
+					android:gravity="top|left" android:textColor="#000000"
+					 android:textColorHint="#ddd"  android:paddingTop="10dp"
+					android:background="#FFFFFF" android:textSize="17sp"
+					android:layout_margin="3dp"  
+					android:hint="请在这里发表您的评论哦" />
+			</FrameLayout>
+      </LinearLayout>
+       <LinearLayout 
+         android:layout_width="fill_parent" android:layout_height="wrap_content"
+        >
+	       <ListView
+	         android:id="@+id/comment_listview"
+ 			android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:fadingEdge="none" android:divider="#ddd"
+				android:dividerHeight="0.5px" android:fadingEdgeLength="0dp"
+				android:cacheColorHint="#00000000"
+ 	       >
+ 	       </ListView>
+       </LinearLayout>
+ </LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    >
+    
+  <RelativeLayout  android:id="@+id/deleteres_imglayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+   
+     android:gravity="center" >
+     <com.axinxuandroid.activity.view.CommonTopView
+	     android:id="@+id/deleteres_topview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:title="删除"
+         anxinxuan:leftimgsrc="@drawable/title_btn_function_left" 
+         anxinxuan:rightimgsrc="@drawable/imgdelete" 
+     />
+     <ImageView
+        android:layout_below="@id/deleteres_topview"
+        android:id="@+id/deleteres_imgshow" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerInside"
+        android:background="#f6f3e4"
+        />
+
+</RelativeLayout>
+ <RelativeLayout  android:id="@+id/deleteres_videolayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentTop="true"
+    android:background="#000000"
+     android:orientation="vertical" 
+     >
+      <RelativeLayout
+           android:layout_height="fill_parent"
+           android:layout_width="fill_parent"
+           android:gravity="center_horizontal|center_vertical"
+          >
+	     <com.axinxuandroid.activity.view.VideoView
+	        android:id="@+id/deleteres_videoview"
+	        android:layout_width="480dp"
+	        android:layout_height="320dp"
+	        android:gravity="center"
+	     /> 
+	     <ImageView
+	        android:id="@+id/deleteres_videoshowimg"
+	        android:layout_width="480dp"
+	        android:layout_height="320dp"
+	        android:src="@drawable/videobg"
+	        android:layout_alignBaseline="@id/deleteres_videoview"
+	      />
+      </RelativeLayout>
+       <RelativeLayout
+           android:layout_height="fill_parent"
+           android:layout_width="wrap_content"
+           android:layout_alignParentLeft="true"
+          >
+           <Button   
+		           android:background="@null"
+		           android:id="@+id/deleteres_backvideo"
+		           android:layout_width="80dp"
+		           android:layout_height="50dp"  
+		           android:textSize="20sp" android:textColor="#ffffff"
+		           android:text="返回" /> 
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_height="fill_parent"
+           android:layout_width="wrap_content"
+           android:layout_alignParentRight="true"
+         >
+           <Button   
+		           android:background="@null"
+		           android:id="@+id/deleteres_deletevideo"
+		           android:layout_width="80dp"
+		           android:layout_height="50dp"  
+		           android:textSize="20sp" android:textColor="#ffffff"
+		           android:text="删除" /> 
+        </RelativeLayout>
+ </RelativeLayout>
+ 
+ 
+  <RelativeLayout  android:id="@+id/deleteres_audiolayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:layout_alignParentTop="true"
+    
+     android:gravity="center" >
+      
+ </RelativeLayout>
+</RelativeLayout>

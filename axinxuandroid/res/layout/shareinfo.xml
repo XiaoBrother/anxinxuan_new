@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#f6f3e4"
+	android:orientation="vertical">
+
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/shareinfo_topview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" anxinxuan:title="我的分享"
+		 />
+
+
+	<LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
+		android:layout_height="wrap_content" android:layout_marginTop="5dp"
+		android:paddingLeft="5dp" android:paddingRight="5dp">
+		<EditText android:id="@+id/shareinfo_message"  android:background="@drawable/shape_corner_edittext"
+		    android:paddingLeft="10dp" android:paddingTop="8dp"
+		    android:textSize="16sp" android:textColor="#B6B6AE"
+			android:layout_width="fill_parent" android:layout_height="150dp" android:gravity="top|left"/>
+		<Button android:id="@+id/shareinfo_send" android:layout_width="fill_parent"
+			android:layout_height="50dp" android:text="分享" android:textSize="20sp"
+			android:layout_marginTop="15dp"
+			android:textColor="#ffffff" android:background="@drawable/shape_corner_button" />
+	</LinearLayout>
+
+</LinearLayout>

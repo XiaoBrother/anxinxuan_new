@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+ 	android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <FrameLayout android:layout_width="70dp" android:layout_height="70dp" android:layout_marginTop="6dp" android:layout_marginRight="6dp">
+      <ImageView  android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:id="@+id/uploadphoto_griditem_img" android:scaleType="fitXY" 
+      />
+     <ImageView android:background="@drawable/yuanjiao"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+       <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+          android:gravity="center"      android:id="@+id/uploadphoto_griditem_convlay" android:visibility="gone"
+          android:background="#ECEDEE"  
+        >
+         <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+           android:id="@+id/uploadphoto_griditem_finishimg" android:visibility="gone"
+           android:background="@null"  android:src="@drawable/warnright" />
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+           android:textSize="16px" android:text=""  android:textColor="#000" android:gravity="center"
+           android:id="@+id/uploadphoto_griditem_msg" android:visibility="gone"
+           />
+       </LinearLayout>
+     </FrameLayout>
+    
+     <ImageView android:layout_width="18dp" android:layout_height="wrap_content"
+       android:id="@+id/uploadphoto_griditem_delete"
+      android:background="@null" android:src="@drawable/corndelete" android:layout_alignParentRight="true"
+     />
+       
+</RelativeLayout>

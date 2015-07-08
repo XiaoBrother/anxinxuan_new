@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	 android:background="#F6F6F6"  android:id="@+id/batchlist_bglayout" 
+	 android:orientation="vertical">
+	<LinearLayout android:orientation="horizontal"
+		android:layout_height="90dp" android:layout_width="fill_parent"
+		android:layout_marginLeft="-95dp">
+		<TableLayout android:layout_width="80dp"  android:gravity="center"
+			android:layout_height="fill_parent"
+			android:layout_marginLeft="10dp" android:stretchColumns="*">
+			<TableRow>
+			   <ImageButton android:id="@+id/batchlist_edit"  
+ 					android:layout_width="35dp" android:layout_height="35dp" android:scaleType="centerInside"
+					android:src="@drawable/batchlist_jilu" android:background="@null" />
+  				 <ImageButton android:id="@+id/batchlist_showhidden"   android:scaleType="centerInside"
+					android:layout_width="35dp" android:layout_height="35dp" 
+					android:src="@drawable/batchlist_hidden" android:background="@null" />
+			</TableRow>
+			<TableRow android:layout_marginTop="3dp">
+ 			 <ImageButton android:id="@+id/batchlist_del"
+					android:layout_width="35dp" android:layout_height="35dp" android:scaleType="centerInside"
+ 					android:src="@drawable/batchlist_delete" android:background="@null" />
+			 <ImageButton android:id="@+id/batchlist_totop"
+			
+					android:layout_width="35dp" android:layout_height="35dp" android:scaleType="centerInside"
+					android:src="@drawable/batchlist_totop" android:background="@null" />
+			</TableRow>
+		</TableLayout>
+
+		<LinearLayout 
+			 android:layout_width="fill_parent"
+			android:layout_height="fill_parent"  
+			android:orientation="horizontal">
+			<TextView android:layout_width="75dp" android:layout_height="fill_parent"
+				android:id="@+id/batchlist_variety" android:textSize="20sp" android:layout_marginLeft="25dp"
+				android:gravity="center_vertical"
+				android:textColor="#bcbcbc"   />
+			<ImageView   android:layout_width="wrap_content"  android:id="@+id/batchlist_repeatimg"
+			    android:layout_marginLeft="-10dp"
+ 				android:layout_height="fill_parent" android:background="@drawable/batch_bg_normal"
+				 />
+			<LinearLayout android:layout_height="fill_parent"
+				android:layout_width="fill_parent" android:orientation="vertical"
+				android:gravity="center_vertical"
+				 >
+				<RelativeLayout android:layout_height="23dp" android:layout_marginLeft="2dp"
+					android:layout_width="fill_parent">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:orientation="horizontal"
+						android:layout_alignParentLeft="true">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="fill_parent" android:textSize="16sp"
+							android:text="NO." android:textColor="#8abc1d"
+						    android:paddingTop="3dp" />
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="fill_parent" android:id="@+id/batchlist_batchcode"
+							android:textSize="16sp" android:textColor="#8abc1d"
+							android:paddingTop="3dp" />
+					</LinearLayout>
+ 				</RelativeLayout>
+ 				<LinearLayout android:layout_height="wrap_content"  android:layout_marginLeft="2dp"
+					android:orientation="vertical" android:layout_width="fill_parent">
+					<TextView android:layout_width="wrap_content"
+						android:layout_height="fill_parent" android:id="@+id/batchlist_date"
+						android:textSize="14sp" android:textColor="#999"
+ 						 />
+					<TextView android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:id="@+id/batchlist_recordcount"
+						android:textSize="14sp" android:textColor="#999" />
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+
+
+	</LinearLayout>
+</LinearLayout> 

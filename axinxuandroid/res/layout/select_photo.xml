@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+    android:background="#F7F7F8"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.axinxuandroid.activity.view.CommonTopView
+	     android:id="@+id/selectphoto_topview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:title=""
+         anxinxuan:lefttext="相册" 
+         anxinxuan:righttext="取消" 
+       />
+	<RelativeLayout  android:layout_marginBottom="65dp" android:layout_below="@id/selectphoto_topview"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+ 	   <GridView android:id="@+id/selectphoto_gridview"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:gravity="center"   
+		android:numColumns="4" android:verticalSpacing="6dp"  android:horizontalSpacing="3dp"
+		 android:layout_marginTop="15dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" 
+		android:cacheColorHint="#00000000" android:scrollbars="none"
+ 		android:listSelector="@android:color/transparent"
+ 		/>
+ 	</RelativeLayout>
+	<RelativeLayout 
+		android:layout_width="fill_parent" android:layout_height="65dp"
+		android:layout_alignParentBottom="true" android:background="#292929"
+		android:gravity="center_vertical">
+		 <com.axinxuandroid.activity.view.PhotoBottomView
+		  android:id="@+id/selectphoto_bottomview"
+		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+		  />
+   	</RelativeLayout>
+	
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical"  
+	android:background="#FFFFFF">
+	<RelativeLayout android:layout_margin="5dp"  
+		  android:layout_width="fill_parent"
+		  android:id="@+id/record_detaile_userinfodesc"
+		android:layout_height="50dp" android:background="#FFFFFF">
+
+		<FrameLayout android:layout_width="50dp"
+			android:layout_alignParentLeft="true" android:id="@+id/record_detaile_userimglay"
+			android:layout_height="fill_parent">
+			<ImageView android:id="@+id/record_detaile_user_img"
+				android:layout_width="fill_parent" android:layout_height="fill_parent"
+				android:scaleType="centerCrop" android:layout_centerVertical="true" />
+			<ImageView android:background="@drawable/yuanjiao"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+		</FrameLayout>
+
+
+		<RelativeLayout android:layout_marginLeft="8dp"  
+			android:layout_toRightOf="@id/record_detaile_userimglay"
+			android:layout_width="wrap_content" android:layout_height="fill_parent">
+			<TextView android:id="@+id/record_detaile_user_username" android:layout_alignParentTop="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="17sp" android:textColor="#050503">
+			</TextView>
+			<TextView android:id="@+id/record_detaile_send_time" android:layout_alignParentBottom="true"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:textSize="15sp" android:textColor="#69676A">
+			</TextView>
+		</RelativeLayout>
+		<RelativeLayout android:layout_width="wrap_content"
+			android:layout_height="fill_parent" android:layout_alignParentRight="true"
+			android:layout_marginRight="5dp"
+			android:gravity="center_vertical">
+			<ImageView  style="@style/setting_arrow_img"  />
+		</RelativeLayout>
+	</RelativeLayout>
+	<com.axinxuandroid.activity.view.ImageGalleryView
+		android:id="@+id/record_detaile_showres_imggallery"  
+		android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+	<TextView android:id="@+id/record_detaile_timeitem_context"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_margin="5dp" android:gravity="top" android:textColor="#6F6E71"
+		android:lineSpacingExtra="6dp" android:lineSpacingMultiplier="1" android:visibility="gone"
+		android:textSize="17sp" />
+	 
+	<com.axinxuandroid.activity.view.EditTabelView  android:id="@+id/record_detaile_timeitem_tablelayout" 
+			    android:layout_margin="3dp"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:visibility="gone" />
+     <LinearLayout 
+      android:layout_width="fill_parent" android:layout_height="50dp" android:layout_marginLeft="15dp"
+    >
+      <ImageView
+        android:layout_width="25dp" android:layout_height="fill_parent"
+        android:scaleType="centerInside" android:src="@drawable/timeitem_pinglun"
+      />
+      <TextView android:layout_height="fill_parent" android:layout_width="wrap_content"
+        android:text="评论列表" android:padding="5dp" android:textColor="#666" android:textSize="16sp"
+        android:gravity="center" android:layout_marginLeft="3dp"
+      />
+       <TextView android:layout_height="fill_parent" android:layout_width="wrap_content"
+        android:text="" android:padding="5dp" android:textColor="#050503" android:textSize="16sp"
+        android:layout_alignParentRight="true" android:gravity="center"
+        android:id="@+id/record_detaile_timeitem_commentcount"  android:visibility="gone"
+      />  
+    </LinearLayout>
+</LinearLayout>
+
+
+ 
+ 

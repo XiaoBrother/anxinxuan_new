@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:layout_alignParentTop="true" 
+	>
+	    
+	    	    	     <LinearLayout
+			  android:orientation="horizontal"
+			  android:layout_width="fill_parent"
+			  android:layout_height="132dp"
+			  android:background="#D3D2C5"
+			  android:gravity="center_vertical"
+   			>
+	 			 <ImageButton
+				   android:id="@+id/timeitem_edit"
+				   android:layout_width="fill_parent"
+				   android:layout_weight="1"
+				   android:layout_height="fill_parent"
+				   android:src="@drawable/timeitem_edit"
+				   android:background="#ffffff"
+				   android:layout_marginLeft="0.5dp"
+				 />
+				 <ImageButton
+				   android:id="@+id/timeitem_delete"
+				  android:layout_width="fill_parent"
+				   android:layout_weight="1"
+				   android:layout_height="fill_parent"
+				   android:src="@drawable/timeitem_delete"
+				   android:background="#ffffff"
+				   android:layout_marginLeft="0.5dp"
+				 />
+				  <ImageButton
+				   android:id="@+id/timeitem_pinglun"
+				  android:layout_width="fill_parent"
+				   android:layout_weight="1"
+				   android:layout_height="fill_parent"
+				   android:src="@drawable/timeitem_pinglun"
+				   android:background="#ffffff"
+				   android:layout_marginLeft="0.5dp"
+				 />
+				 <ImageButton
+				   android:id="@+id/timeitem_share"
+				   android:layout_width="fill_parent"
+				   android:layout_weight="1"
+				   android:layout_height="fill_parent"
+				   android:src="@drawable/timeitem_share"
+				   android:background="#ffffff"
+				   android:layout_marginLeft="0.5dp"
+				 />
+			 </LinearLayout>
+
+ 	 
+</RelativeLayout>

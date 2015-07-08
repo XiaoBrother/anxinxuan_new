@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f6f3e4"
+    android:orientation="vertical" >
+
+    <com.axinxuandroid.activity.view.CommonTopView
+         android:id="@+id/batchrecord_topview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:title=""
+         anxinxuan:rightimgsrc="@drawable/icon_add"
+       />
+     <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:background="@drawable/caidan_bar_bg" 
+            android:stretchColumns="*"
+      >
+       <TableRow>
+         <Button
+             android:id="@+id/batchrecord_salebtn"
+             android:layout_width="wrap_content"
+             android:layout_height="fill_parent"
+             android:layout_centerInParent="true"
+             android:gravity="center"
+             android:textSize="20sp"
+              android:textColor="#8b7867"
+             android:text="生产者记录"
+             android:background="@drawable/btnbg_click"
+              />
+           
+             <Button
+            android:id="@+id/batchrecord_custombtn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+             android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="#8b7867"
+            android:text="消费者记录"
+             android:background="@drawable/btnbg_normal"
+             />
+       </TableRow>
+     
+     </TableLayout>
+    
+        <com.axinxuandroid.activity.view.TimeLineView
+        android:id="@+id/batchrecord_timelineview"
+         android:layout_width="fill_parent"
+         android:layout_height="fill_parent"
+       />
+       
+     
+
+ 
+    </LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#e0000000"
+	 >
+	<com.axinxuandroid.activity.view.ImageGalleryView  android:id="@+id/imggallerywindow_img"
+		android:layout_width="fill_parent" android:layout_height="fill_parent" />
+		
+   <LinearLayout android:layout_width="fill_parent" android:layout_height="50dp"
+     android:layout_alignParentBottom="true"  android:gravity="center"
+    >
+     <TextView  android:layout_width="wrap_content"  android:layout_height="wrap_content"
+        android:id="@+id/imggallerywindow_text"  android:textColor="#fff" android:textSize="20sp"
+     />
+   </LinearLayout>
+</RelativeLayout>

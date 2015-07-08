@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:clickable="true"
+       >
+        
+       <LinearLayout
+	    android:layout_width="fill_parent" android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+ 	      >
+	      <EditText android:id="@+id/serach_seachtext"
+				android:background="@drawable/serach_left" android:paddingLeft="12.0sp"
+ 				android:saveEnabled="true" android:layout_width="fill_parent"
+				android:layout_height="57.5dp"
+				android:layout_marginRight="5dp"
+				android:layout_alignParentTop="true" />
+			
+		   <ImageButton
+	           android:layout_marginLeft="-40.5dp"
+  	        android:background="@drawable/serach_right"
+	        android:id="@+id/serach_seachbtn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	          
+	         />
+	         
+ 	    </LinearLayout>
+    </LinearLayout>

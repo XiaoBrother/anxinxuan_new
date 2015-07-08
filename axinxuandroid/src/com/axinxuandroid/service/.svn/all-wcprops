@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service
+END
+RecordService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/RecordService.java
+END
+UserService.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/UserService.java
+END
+VilleageBannerService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/VilleageBannerService.java
+END
+UserVisitHistoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/UserVisitHistoryService.java
+END
+BatchService.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/BatchService.java
+END
+BatchLabelService.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/BatchLabelService.java
+END
+VarietyService.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/VarietyService.java
+END
+SystemLabelService.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/SystemLabelService.java
+END
+SystemNoticeService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/SystemNoticeService.java
+END
+SystemLogService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/SystemLogService.java
+END
+RecordResourceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/RecordResourceService.java
+END
+AdvocateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/AdvocateService.java
+END
+UserVilleageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/UserVilleageService.java
+END
+NetUpdateRecordService.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/NetUpdateRecordService.java
+END
+VilleageService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/VilleageService.java
+END
+ProustService.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/ProustService.java
+END
+UserFovoriteService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/UserFovoriteService.java
+END
+OAuthAccountService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/OAuthAccountService.java
+END
+SystemSetService.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/SystemSetService.java
+END
+IntelligenceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/IntelligenceService.java
+END
+CommentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/CommentService.java
+END
+VilleagePhotoService.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/VilleagePhotoService.java
+END
+SharedPreferenceService.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/SharedPreferenceService.java
+END
+TemplateService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/TemplateService.java
+END
+CategoryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/service/CategoryService.java
+END

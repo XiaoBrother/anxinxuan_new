@@ -1,0 +1,150 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="android:Theme.Light" /> 
+  
+     <style name="common_button_setting">
+	    <item name="android:background">@drawable/btn_style_login</item>    
+		<item name="android:textSize">25sp</item>   
+		<item name="android:textColor">#ffffff</item> 
+		<item name="android:layout_centerVertical">true</item>     
+ 	</style> 
+   <style name="common_button_setting2">
+	    <item name="android:background">@drawable/valid_s_result_btn_bg</item>    
+		<item name="android:textSize">22sp</item>   
+		<item name="android:textColor">#ffffff</item> 
+		<item name="android:layout_centerVertical">true</item>  
+	    <item name="android:paddingLeft">16dp</item> 
+	    <item name="android:paddingRight">16dp</item> 
+	    <item name="android:paddingTop">13dp</item>
+	    <item name="android:paddingBottom">13dp</item> 
+  	</style> 
+ 	
+    <style name="time_line_op_img">
+	    <item name="android:scaleType">centerInside</item>    
+		<item name="android:background">@null</item>   
+		<item name="android:layout_width">20dp</item> 
+		<item name="android:clickable">false</item>
+		<item name="android:layout_height">wrap_content</item>    
+  	</style> 
+ 		 
+    <style name="time_line_op_layout">
+	    <item name="android:layout_width">fill_parent</item>    
+		<item name="android:layout_weight">1</item>   
+		<item name="android:layout_height">fill_parent</item> 
+		<item name="android:visibility">gone</item>    
+		<item name="android:background">#F9F9F9</item>   
+		<item name="android:layout_marginLeft">0.5dp</item> 
+		<item name="android:gravity">center</item> 
+		<item name="android:clickable">true</item>
+  	</style>  
+  						 
+    <style name="setting_arrow_img">
+	    <item name="android:layout_width">wrap_content</item>    
+		<item name="android:layout_height">20dp</item>   
+ 		<item name="android:scaleType">centerInside</item> 
+		<item name="android:layout_centerVertical">true</item>    
+		<item name="android:layout_alignParentRight">true</item>  
+		<item name="android:src">@drawable/setting_arrow_img</item>        
+ 	</style> 
+ 	
+  	 <style name="setting_info_text">
+	    <item name="android:layout_width">wrap_content</item>    
+		<item name="android:layout_height">fill_parent</item>   
+		<item name="android:gravity">center_vertical</item> 
+		<item name="android:textSize">18sp</item>    
+		<item name="android:textColor">#262233</item>  
+		<item name="android:paddingLeft">8dp</item>    
+   	</style> 
+    
+    <style name="setting_relayout">
+	    <item name="android:layout_width">fill_parent</item>    
+		<item name="android:layout_height">56dp</item>   
+		<item name="android:paddingLeft">15dp</item>  
+		<item name="android:paddingRight">15dp</item>    
+		<item name="android:gravity">center_vertical</item> 
+		<item name="android:clickable">true</item>    
+   	</style> 
+    
+    <style name="chat_text_date_style">
+	    <item name="android:padding">2dp</item>    
+		<item name="android:textColor">#ffffff</item>   
+		<item name="android:textSize">12sp</item>      
+		<item name="android:background">#bfbfbf</item> 
+	</style>
+  
+	     
+	<style name="chat_content_date_style">
+	    <item name="android:minHeight">50dp</item>
+	    <item name="android:gravity">left|center</item>    
+		<item name="android:textColor">#000000</item>   
+		<item name="android:textSize">15sp</item>      
+		<item name="android:lineSpacingExtra">2dp</item>   
+		<item name="android:clickable">true</item>   
+		<item name="android:focusable">true</item>   
+		<item name="android:background">#bfbfbf</item> 
+	</style>	 
+	
+	<style name="chat_text_name_style">  
+		<item name="android:textColor">#818181</item>   
+		<item name="android:textSize">15sp</item>      
+		<item name="android:gravity">center</item> 
+	</style>
+	
+	<style name="share_window_icon_img">
+	    <item name="android:layout_width">30dp</item>    
+		<item name="android:layout_height">wrap_content</item>   
+		<item name="android:scaleType">centerInside</item> 
+   	</style> 
+    <style name="share_window_text">
+	    <item name="android:layout_width">wrap_content</item>    
+		<item name="android:layout_height">fill_parent</item>   
+		<item name="android:layout_marginLeft">10dp</item> 
+		<item name="android:textSize">20sp</item> 
+		<item name="android:gravity">center_vertical</item> 
+		<item name="android:textColor">#333333</item>
+   	</style> 
+   	
+    
+    <style name="dialog" parent="android:style/Theme.Dialog">  
+        <item name="android:background">#00000000</item>  
+        <item name="android:windowBackground">@android:color/transparent</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowIsFloating">true</item>  
+    </style>  
+	<!-- ####################以上内容全部来自搬运 ############################################ -->
+	
+    <style name="AnimFade" parent="@android:style/Animation.Activity">  
+    	<item name="android:activityOpenEnterAnimation">@anim/fade_in</item>  
+    	<item name="android:activityOpenExitAnimation">@anim/hold</item>        
+    	<item name="android:activityCloseEnterAnimation">@anim/fade_in</item>  
+    	<item name="android:activityCloseExitAnimation">@anim/fade_out</item> 
+	</style>
+		<style name="Anim_style2" parent="android:Theme.NoTitleBar">         
+        <item name="android:windowAnimationStyle">@style/AnimFade</item>       
+	</style> 
+	<!-- 分享窗口动画 -->
+    <style name="SharePopupAnimation" parent="android:Animation" mce_bogus="1">          
+        <item name="android:windowEnterAnimation">@anim/share_popup_enter</item>     
+        <item name="android:windowExitAnimation">@anim/share_popup_exit</item>     
+    </style>  
+    <!-- 透明动画 -->
+    <style name="TimeLineBottomAnimation" parent="android:Animation" mce_bogus="1">          
+        <item name="android:windowEnterAnimation">@anim/timelinebottom_popup_enter</item>  
+        <item name="android:windowExitAnimation">@anim/timelinebottom_popup_exit</item>        
+     </style>
+     
+     <!-- 底部弹出动画 -->
+    <style name="BottomInOutAnimation" parent="android:Animation" mce_bogus="1">          
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>  
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>        
+     </style>    
+     
+     <!-- 自定义进度条 -->  
+   <style name="ProgressBar_Mini" parent="@android:style/Widget.ProgressBar.Horizontal">  
+       <item name="android:maxHeight">5dip</item>  
+       <item name="android:minHeight">2dip</item>  
+       <item name="android:indeterminateOnly">false</item>  
+       <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>  
+       <item name="android:progressDrawable">@drawable/progressbar_mini</item>  
+    </style> 
+</resources>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/page_bg_color" android:id="@+id/uservilleage_root"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:orientation="vertical">
+
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/uservilleage_topview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" anxinxuan:title="农场信息"
+		anxinxuan:leftimgsrc="@drawable/icon_back" anxinxuan:rightimgsrc="@drawable/icon_moreop"/>
+
+ 	<ScrollView android:layout_width="fill_parent" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginTop="15dp"
+		android:layout_height="wrap_content">
+		<LinearLayout android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" android:orientation="vertical">
+			<com.axinxuandroid.activity.view.ImageGalleryView  anxinxuan:indexMode="down"
+				android:id="@+id/uservilleage_imggallery" android:layout_width="fill_parent"
+				android:layout_height="wrap_content" />
+				
+			<RelativeLayout android:layout_width="fill_parent"
+				android:id="@+id/uservilleage_desclay" android:background="@drawable/draft_item_bg"
+				android:layout_height="55dp" android:clickable="true"  
+				android:padding="10dp">
+				<TextView android:layout_width="50dp" android:clickable="false"
+					android:layout_height="fill_parent" android:textColor="#444"
+					android:textSize="20sp"   android:gravity="center_vertical"
+					android:text="简介" android:id="@+id/uservilleage_desc"
+					android:focusable="false" />
+				<ImageView android:layout_width="wrap_content" 
+					android:clickable="false" android:layout_height="fill_parent"
+					android:background="@null" android:src="@drawable/gd"  
+					android:layout_alignParentRight="true" />
+				<HorizontalScrollView android:layout_width="fill_parent" android:clickable="false"   android:layout_marginRight="15dp"
+					android:layout_height="wrap_content" android:layout_toRightOf="@id/uservilleage_desc"
+					android:scrollbars="none">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:paddingTop="5dp">
+						<TextView android:layout_width="wrap_content" android:clickable="false"
+							 android:layout_height="fill_parent"
+							android:textColor="#605E60" android:textSize="17sp"
+							android:layout_marginLeft="10dp" android:id="@+id/uservilleage_scale" />
+						<TextView android:layout_width="wrap_content" android:clickable="false"
+							  android:layout_height="fill_parent"
+							android:textColor="#605E60" android:textSize="17sp"
+							android:layout_marginLeft="10dp" android:id="@+id/uservilleage_buildtime" />
+					</LinearLayout>
+				</HorizontalScrollView>
+			</RelativeLayout>
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:background="@drawable/draft_item_bg" android:layout_height="55dp"
+				android:padding="10dp">
+				<TextView android:layout_width="50dp"
+					android:layout_height="fill_parent" android:textColor="#444"
+					android:textSize="20sp"   android:gravity="center_vertical"
+					android:text="资质" android:id="@+id/uservilleage_intelligendesc" />
+ 				<LinearLayout android:layout_width="fill_parent" android:layout_toRightOf="@id/uservilleage_intelligendesc"
+						android:layout_height="fill_parent" android:id="@+id/uservilleage_intelligenlay"  android:gravity="center_vertical"
+						 >
+				</LinearLayout>
+ 			</RelativeLayout>
+
+
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:background="@drawable/draft_item_bg" android:layout_height="55dp"
+				android:padding="10dp">
+				<TextView android:layout_width="50dp"
+					android:layout_height="fill_parent" android:textColor="#444"
+					android:textSize="20sp"  android:gravity="center_vertical"
+					android:text="电话" android:id="@+id/uservilleage_teledesc" />
+				<HorizontalScrollView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_toRightOf="@id/uservilleage_teledesc"
+					android:scrollbars="none">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:paddingTop="5dp">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="fill_parent" android:textColor="#605E60"
+							android:textSize="17sp" android:layout_marginLeft="10dp"
+							android:id="@+id/uservilleage_tele" />
+					</LinearLayout>
+				</HorizontalScrollView>
+			</RelativeLayout>
+
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:background="@drawable/draft_item_bg" android:layout_height="55dp"
+				android:padding="10dp">
+				<TextView android:layout_width="50dp"
+					android:layout_height="fill_parent" android:textColor="#444"
+					android:textSize="20sp"   android:gravity="center_vertical"
+					android:text="地址" android:id="@+id/uservilleage_addressdesc" />
+				<HorizontalScrollView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_toRightOf="@id/uservilleage_addressdesc"
+					android:scrollbars="none">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:paddingTop="5dp">
+						<TextView android:layout_width="wrap_content"
+							android:layout_height="fill_parent" android:textColor="#605E60"
+							android:textSize="17sp" android:layout_marginLeft="10dp"
+							android:id="@+id/uservilleage_address" />
+						<ImageView android:layout_width="wrap_content" android:id="@+id/uservilleage_map"
+							android:layout_height="fill_parent" android:background="@null"
+							android:src="@drawable/mapicon" android:layout_marginLeft="10dp" />
+					</LinearLayout>
+				</HorizontalScrollView>
+			</RelativeLayout>
+
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:background="@drawable/draft_item_bg" android:layout_height="55dp"
+				android:paddingLeft="10dp" android:paddingTop="2dp"
+				android:paddingBottom="2dp">
+				<TextView android:layout_width="50dp"
+					android:layout_height="fill_parent" android:textColor="#444"
+					android:textSize="20sp"   android:gravity="center_vertical"
+					android:text="农人" android:id="@+id/uservilleage_persondesc" />
+ 					<LinearLayout android:layout_width="fill_parent" android:layout_toRightOf="@id/uservilleage_persondesc"
+						android:layout_height="fill_parent" android:id="@+id/uservilleage_personlay"
+						android:paddingTop="5dp">
+					</LinearLayout>
+ 			</RelativeLayout>
+
+
+			<RelativeLayout android:layout_width="fill_parent"
+				android:background="@drawable/draft_item_bg" android:layout_height="55dp"
+				android:padding="10dp">
+				<TextView android:layout_width="50dp"
+					android:layout_height="fill_parent" android:textColor="#444"
+					android:textSize="20sp"  android:gravity="center_vertical"
+					android:text="农品" android:id="@+id/uservilleage_varitydesc" />
+				<HorizontalScrollView android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_toRightOf="@id/uservilleage_varitydesc"
+					android:scrollbars="none">
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="fill_parent" android:id="@+id/uservilleage_varitylay"
+						android:paddingTop="5dp">
+					</LinearLayout>
+				</HorizontalScrollView>
+			</RelativeLayout>
+		</LinearLayout>
+	</ScrollView>
+
+</LinearLayout>

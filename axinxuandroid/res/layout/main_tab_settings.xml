@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#F5F5F5" android:orientation="vertical">
+	<LinearLayout android:layout_marginBottom="55dp"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:orientation="vertical">
+		<com.axinxuandroid.activity.view.CommonTopView
+			android:id="@+id/scan_code_topview" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" anxinxuan:title="更多" />
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:scrollbarStyle="outsideOverlay">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+				
+				<RelativeLayout android:id="@+id/setting_grxx"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:layout_marginTop="15dp" android:gravity="center_vertical"
+					android:clickable="true" android:paddingTop="10dp"
+					android:paddingLeft="25dp" android:paddingBottom="10dp"
+					android:background="@color/main_setting_item_bg">
+					<LinearLayout android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:orientation="horizontal"
+						android:gravity="center_vertical">
+						<FrameLayout android:layout_width="60dp"
+							android:layout_height="60dp">
+							<ImageView android:id="@+id/setting_userimg"
+								android:layout_width="fill_parent" android:layout_height="fill_parent"
+								android:scaleType="centerCrop" android:layout_centerVertical="true" />
+							<ImageView android:background="@drawable/yuanjiao"
+								android:layout_width="fill_parent" android:layout_height="fill_parent" />
+						</FrameLayout>	
+
+						<TextView android:id="@+id/setting_username"
+							android:layout_width="wrap_content" android:layout_height="wrap_content"
+							android:padding="8dp" android:text="" android:textSize="17sp"
+							android:textColor="#000" />
+					</LinearLayout>
+					<ImageView style="@style/setting_arrow_img" android:layout_marginRight="15dp"/>
+				</RelativeLayout>
+
+
+
+				<RelativeLayout android:id="@+id/setting_draft"  android:layout_marginTop="15dp"
+					  style="@style/setting_relayout" android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="草稿箱" />
+					<ImageView android:id="@+id/setting_draft_rimg" style="@style/setting_arrow_img" />
+					<TextView android:id="@+id/setting_draft_notice"
+						android:layout_width="wrap_content" android:layout_height="fill_parent"
+						android:visibility="gone" android:textSize="20sp"
+						android:layout_marginRight="10dp" android:textStyle="bold"
+						android:gravity="center_vertical" android:layout_toLeftOf="@id/setting_draft_rimg"
+						android:textColor="#D91F24" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/setting_usercomment"  android:layout_marginTop="0.5dp"
+					 style="@style/setting_relayout" android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="我的评论" />
+					<ImageView style="@style/setting_arrow_img" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/setting_userfavorite" android:layout_marginTop="0.5dp"
+					 style="@style/setting_relayout" android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="农品收藏" />
+					<ImageView style="@style/setting_arrow_img" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/setting_visithistory" android:layout_marginTop="0.5dp"
+					 style="@style/setting_relayout" android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="过往查询" />
+					<ImageView style="@style/setting_arrow_img" />
+				</RelativeLayout>
+
+
+
+				<!--
+					***********************************************************************
+				-->
+				<RelativeLayout android:id="@+id/setting_tbmb" android:visibility="gone"
+					 style="@style/setting_relayout" android:layout_marginTop="15dp"
+					android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="数据模版同步" />
+					<ImageView android:id="@+id/setting_tbmb_rimg" style="@style/setting_arrow_img" />
+					<ImageView android:id="@+id/setting_tbmb_notice"
+						android:layout_width="wrap_content" android:layout_height="fill_parent"
+						android:scaleType="centerInside" android:visibility="gone"
+						android:layout_marginRight="10dp" android:layout_toLeftOf="@id/setting_tbmb_rimg"
+						android:src="@drawable/newnotice" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/setting_scfs" android:layout_marginTop="0.5dp"
+					 style="@style/setting_relayout" android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="通用设置" />
+					<ImageView style="@style/setting_arrow_img" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/setting_clean" android:layout_marginTop="0.5dp"
+					 style="@style/setting_relayout" android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="清空历史记录" />
+					<ImageView style="@style/setting_arrow_img" />
+				</RelativeLayout>
+				<RelativeLayout android:id="@+id/setting_resetpwd" android:layout_marginTop="0.5dp"
+					 style="@style/setting_relayout" android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="重设密码" />
+					<ImageView style="@style/setting_arrow_img" />
+				</RelativeLayout>
+				<!--
+					***********************************************************************
+				-->
+				<RelativeLayout android:id="@+id/setting_checkversion"
+					 style="@style/setting_relayout" android:layout_marginTop="15dp"
+ 					android:background="@color/main_setting_item_bg">
+					<TextView android:id="@+id/setting_versiontext" style="@style/setting_info_text"
+						android:text="关于版本" />
+					<ImageView android:id="@+id/setting_checkversion_rimg"
+						style="@style/setting_arrow_img" />
+					<ImageView android:id="@+id/setting_checkversion_notice"
+						android:layout_width="wrap_content" android:layout_height="fill_parent"
+						android:scaleType="centerInside" android:visibility="gone"
+						android:layout_marginRight="10dp" android:layout_toLeftOf="@id/setting_checkversion_rimg"
+						android:src="@drawable/newnotice" />
+				</RelativeLayout>
+				<Button android:id="@+id/setting_exit" android:layout_width="fill_parent"
+					android:layout_height="50dp" android:layout_marginTop="20dp"
+					android:layout_marginBottom="20dp" android:layout_marginLeft="12dp"
+					android:layout_marginRight="12dp" android:padding="4dp"
+					android:text="退出登录" android:textSize="22sp" android:textColor="#fff"
+					android:gravity="center" android:background="@drawable/btn_style_red" />
+
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+	<com.axinxuandroid.activity.view.CommonBottomView
+		android:id="@+id/setting_bottom" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

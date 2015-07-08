@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.axinxuandroid.activity" android:versionCode="1"
+	android:versionName="2.01">
+	<uses-sdk android:minSdkVersion="8" />
+	
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />  
+    <uses-permission android:name="android.permission.READ_SMS" />  
+  	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+ 	<uses-permission android:name="READ_PHONE_STATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-feature android:name="android.hardware.camera" />
+	<uses-feature android:name="android.hardware.camera.autofocus" />
+
+	<application android:debuggable="true" android:icon="@drawable/icon"  
+		android:label="@string/app_name" android:name="com.axinxuandroid.sys.gloable.AxxApplication">
+		<activity android:name=".Appstart" android:label="@string/app_name"
+			android:theme="@android:style/Theme.NoTitleBar">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		   <activity android:name=".RecordDemoActivity" android:label="欢迎页"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		 <activity android:name=".WelcomeActivity" android:label="欢迎页"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		 <activity android:name=".GuideAcitivity" android:label="引导页"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".AboutAppActivity" android:label="关于版本"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".LoginActivity" android:label="用户登录"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".SendPhoneNumActivity" android:label="验证手机号码"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".ValidPhoneNumActivity" android:label="校验验证码"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".MediaActivity" android:label="录音页面"
+			/>
+	 
+		 <activity android:name=".OAuthLoginActivity" android:label="用户OAUTH登录"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		 		 <activity android:name=".UserPageActivity" android:label="用户主页"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".VilleageInfoActivity" android:label="农场信息"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".VilleageDescActivity" android:label="农场描述"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		 <activity android:name=".DeleteResourceActivity" android:label="删除资源" 
+		  android:theme="@android:style/Theme.NoTitleBar">
+		 </activity>
+		 <activity android:name=".PlayVideoActivity" android:label="播放视频" 
+		  android:theme="@android:style/Theme.NoTitleBar">
+		 </activity>
+		 <activity android:name=".PlayVideoHtmlActivity" android:label="html5播放视频" 
+		  android:theme="@android:style/Theme.NoTitleBar">
+		 </activity>
+		<activity android:name=".SelectTypeActivity" android:label="标签选择"
+			android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden">
+ 		</activity>
+		 <activity android:name=".SelectBatchActivity" android:label="标签批次"
+			android:theme="@android:style/Theme.NoTitleBar"/>
+		<activity android:name=".NotifyActivity" android:label="系统通知"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		 <activity android:name=".RecordDetailedActivity" android:label="详细信息"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".RegistActivity" android:label="用户注册"
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".TimelineActivity" android:label="时间轴"
+			android:theme="@android:style/Theme.NoTitleBar"
+			  >
+			 <!--  <intent-filter>
+                 <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter> --> 
+	    </activity>
+		 <!-- android:windowSoftInputMode="stateHidden" -->
+		<activity android:name=".AddRecordActivity" android:label="记录添加" 
+			android:theme="@android:style/Theme.NoTitleBar"  android:windowSoftInputMode="stateHidden|adjustPan"/>
+		
+		<activity android:name=".EditRecordActivity" android:label="记录编辑"
+			android:theme="@android:style/Theme.NoTitleBar"  android:windowSoftInputMode="stateHidden|adjustPan"/>
+		
+		<activity android:name=".TakeCameraActivity" android:label="照相"  
+			android:theme="@android:style/Theme.NoTitleBar" />
+		<activity android:name=".MediaRecorderActivity" android:label="录像"  
+			android:theme="@android:style/Theme.NoTitleBar"  android:screenOrientation="portrait"/>
+		<activity android:name=".TemplateSynchroniseActivity" android:label="同步模板"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+		<activity android:name=".DraftActivity" android:label="草稿箱"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+		<activity android:name=".CleanActivity" android:label="清楚历史记录"  
+			android:theme="@android:style/Theme.NoTitleBar" />
+					<activity android:name=".SelectPhotoActivity" android:label="照片选择"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+								<activity android:name=".PhotoAlbumActivity" android:label="目录"  
+			android:theme="@android:style/Theme.NoTitleBar"> 
+			</activity>
+		<activity android:name=".CommentActivity" android:label="评论"  
+			android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustPan" /> 
+		<activity android:name=".ProustActivity" android:label="普鲁斯特问卷"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+		<activity android:name=".EditProustActivity" android:label="编辑普鲁斯特问卷"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+		<activity android:name=".AddBatchActivity" android:label="添加批次" 
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+		<activity android:name=".SelectVilleageActivity" android:label="选择农场"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+			<!-- android:windowSoftInputMode="stateHidden" 开始隐藏软键盘 -->
+		<activity android:name=".SelectVarietyActivity" android:label="选择品种"  
+			android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden" /> 
+		<activity android:name=".AddVarietyActivity" android:label="添加品种"  
+			android:theme="@android:style/Theme.NoTitleBar" android:windowSoftInputMode="stateHidden|adjustPan"/> 
+		<activity android:name=".UserFovoriteActivity" android:label="用户收藏"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+       <activity android:name=".VisitHistoryActivity" android:label="历史记录"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".SystemUpdateActivity" android:label="系统更新"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+       <activity android:name=".SytemSetActivity" android:label="系统设置"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".BatchManageActivity" android:label="批次管理"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".ScanCodeActivity" android:label="扫码"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".SettingActivity" android:label="更多"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".ResetPwdActivity" android:label="设置密码"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".EditVilleageDescActivity" android:label="编辑农场简介"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".UploadPhotoActivity" android:label="上传农场图片"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".VarietyBatchActivity" android:label="品种批次"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".UserCommentActivity" android:label="用户评论"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".ValidSecurityCodeResultActivity" android:label="防伪码校验"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	  <!--  <activity android:name=".ShareInfoActivity" android:label="分享"  
+	   android:configChanges="keyboardHidden|orientation"  android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.NoTitleBar" >
+			<intent-filter>
+                 <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+                 <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>  
+	   </activity> -->
+	   <activity android:name=".TaoBaoOAuthCallBackActivity" android:label="淘宝授权回调"  
+			android:theme="@android:style/Theme.NoTitleBar" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category  android:name="android.intent.category.DEFAULT"/>
+				<category
+				android:name="android.intent.category.BROWSABLE" />
+				<!--  注意：scheme的值一定要和开发者中心里注册的回调url的“://”之前部分保持一致-->
+				<data android:scheme="com.axinxuandroid.activity"/>
+		   </intent-filter>
+		</activity> 
+		
+		 <!-- 接受微信回传信息 -->
+		  <activity android:name=".wxapi.WXEntryActivity" android:label=""  
+			android:exported="true"/> 
+		
+		<activity android:configChanges="orientation|keyboardHidden"
+			android:name="com.zxing.activity.CaptureActivity"
+			android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+			android:windowSoftInputMode="stateAlwaysHidden">
+
+		</activity>
+		
+		 
+        <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" 
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+         </activity>
+         <service android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"></service>
+         
+		<service android:enabled="true"
+			android:name="com.xmpp.client.connect.ConnectionService"
+			android:label="ConnectionService">
+			<intent-filter>
+				<action android:name="org.androidpn.client.NotificationService" />
+			</intent-filter>
+		</service>
+
+		 
+		<service android:enabled="true"
+			android:name="com.axinxuandroid.sys.gloable.UserFavoriteUpdateService"
+		     >
+			 <intent-filter> 
+                <action android:name="com.axinxuandroid.backservice.UserFavoriteUpdateService" /> 
+             </intent-filter> 
+ 		</service>
+ 		<service android:enabled="true"
+			android:name="com.axinxuandroid.sys.gloable.TemplateUpdateService"
+		     >
+			 <intent-filter> 
+                <action android:name="com.axinxuandroid.backservice.TemplateUpdateService" /> 
+             </intent-filter> 
+ 		</service>
+ 		<service android:enabled="true"
+			android:name="com.axinxuandroid.sys.gloable.CategoryUpdateService"
+		     >
+			 <intent-filter> 
+                <action android:name="com.axinxuandroid.backservice.CategoryUpdateService" /> 
+             </intent-filter> 
+ 		</service>
+ 		<service android:enabled="true"
+			android:name="com.axinxuandroid.sys.gloable.VersionUpdateService"
+		     >
+			 <intent-filter> 
+                <action android:name="com.axinxuandroid.backservice.VersionUpdateService" /> 
+             </intent-filter> 
+ 		</service>
+ 		<service android:enabled="true"
+			android:name="com.axinxuandroid.sys.gloable.UploadSystemErrorService"
+		     >
+			 <intent-filter> 
+                <action android:name="com.axinxuandroid.backservice.UploadSystemErrorService" /> 
+             </intent-filter> 
+ 		</service>
+ 		<service android:enabled="true"
+			android:name="com.axinxuandroid.sys.gloable.SystemUpdateService"
+		     >
+			 <intent-filter> 
+                <action android:name="com.axinxuandroid.backservice.SystemUpdateService" /> 
+             </intent-filter> 
+ 		</service>
+ 		
+ 		 <receiver android:name="com.axinxuandroid.broadcast.SDCardListener">  
+            <intent-filter>  
+                <action android:name="android.intent.action.MEDIA_EJECT" />  
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />  
+                <action android:name="android.intent.action.MEDIA_REMOVED" />  
+                <action android:name="android.intent.action.MEDIA_UNMOUNTED" />  
+                <data android:scheme="file" />  
+            </intent-filter>  
+        </receiver>  
+		<!-- 极光推送 -->
+		 <!-- Required SDK核心功能-->
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden" >
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="com.axinxuandroid.activity" />
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能-->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+ 
+        
+        <!-- Required SDK 核心功能-->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER" />
+                <action android:name="cn.jpush.android.intent.REPORT" />
+                <action android:name="cn.jpush.android.intent.PushService" />
+                <action android:name="cn.jpush.android.intent.PUSH_TIME" />
+                
+            </intent-filter>
+        </service>
+        <!-- 百度定位 -->
+       <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"></service>
+        <!-- Required SDK核心功能-->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true" >
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY" />   <!--Required  显示通知栏 -->
+                <category android:name="com.axinxuandroid.activity" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+             <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package" />
+            </intent-filter>
+
+        </receiver>
+        
+        <!-- Required SDK核心功能-->
+        <receiver android:name="cn.jpush.android.service.AlarmReceiver" />
+        
+        <!-- User defined.    用户自定义的广播接收器-->
+        <receiver
+            android:name="com.axinxuandroid.broadcast.NotifyInfoReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" /> <!--Required  用户注册SDK的intent-->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION" />  
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" /> <!--Required  用户接收SDK消息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" /> <!--Required  用户接收SDK通知栏信息的intent-->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" /> <!--Required  用户打开自定义通知栏的intent-->
+                <category android:name="com.axinxuandroid.activity" />
+            </intent-filter>
+        </receiver>
+ 
+        
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data android:name="JPUSH_CHANNEL" android:value="developer-default"/>
+        <meta-data android:name="JPUSH_APPKEY" android:value="871cc3f5c1534e9a899d2a99" /> <!--  </>值来自开发者平台取得的AppKey-->
+         <!-- 百度地图key -->
+        <meta-data  
+        android:name="com.baidu.lbsapi.API_KEY"  android:value="35nl39kow5d03zkloPW5hPsH" />  
+        
+        <!-- 友盟统计 -->
+        <meta-data android:value="558a310067e58efbb80019f0" android:name="UMENG_APPKEY"></meta-data>
+	   <meta-data android:value="Umeng" android:name="UMENG_CHANNEL"/>
+	</application>
+
+  <!-- 极光推送 -->
+   <!-- Required 自定义用来收发消息的相关权限 -->               
+    <permission
+        android:name="com.axinxuandroid.activity.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature" />
+    <!-- Required  一些系统要求的权限，如访问网络等-->
+    <uses-permission android:name="com.axinxuandroid.activity.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>  
+     <!-- Optional for location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+     <!-- 百度定位-->
+ 	<!--允许应用读取低级别的系统日志文件 -->
+	<uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
+ </manifest> 

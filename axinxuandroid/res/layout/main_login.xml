@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="#8abc1d" android:orientation="vertical"   
+	>
+ 	<TableLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent"   
+		android:gravity="center" android:paddingLeft="10dp" android:paddingRight="10dp"
+		android:stretchColumns="0">
+		<TableRow >
+			   <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+			      android:scaleType="centerInside" android:src="@drawable/loginlogo"
+			    />
+		</TableRow>
+ 		<TableRow >
+			<TableLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:stretchColumns="1"
+				>
+				<TableRow android:layout_margin="0.5dp" android:background="@drawable/inputtextbg"
+					android:layout_height="wrap_content">
+					<TextView android:layout_width="70dp"
+						android:layout_height="25dp" android:text="账号:"
+						android:paddingLeft="18dp" android:textColor="#000000"
+						android:textSize="17sp" android:layout_margin="8dp" />
+					<EditText android:id="@+id/login_user"
+						android:layout_width="match_parent" android:layout_height="25dp"
+						android:background="@null" android:textSize="17sp" android:hint="手机或邮箱"
+						android:layout_margin="8dp" />
+				</TableRow>
+				<TableRow android:layout_marginLeft="0.5dp"
+					android:layout_marginRight="0.5dp" android:layout_marginBottom="0.5dp"
+					android:layout_marginTop="-1dp"
+					android:background="@drawable/inputtextbg" android:layout_height="wrap_content">
+					<TextView android:layout_margin="8dp"
+ 						android:layout_width="70dp" android:layout_height="25dp"
+						android:text="密码:" android:textColor="#000000" android:paddingLeft="18dp"
+						android:textSize="17sp" />
+					<EditText android:id="@+id/login_pwd" android:textSize="17sp"
+						android:background="@null" android:layout_width="match_parent"
+						android:layout_margin="8dp" android:layout_height="25dp"
+						android:password="true" />
+				</TableRow>
+			</TableLayout>
+		</TableRow>
+		<TableRow >
+			 <RelativeLayout 
+			   android:layout_width="fill_parent" android:layout_height="40dp">
+			   
+			    <Button android:layout_alignParentRight="true"  android:layout_width="wrap_content" 
+			       android:id="@+id/login_findpwd" android:background="@null" android:gravity="center_vertical"
+			      android:text="忘记密码？" android:textColor="#fff" android:textSize="16sp"
+			      android:layout_height="fill_parent"/>
+			    <ImageView android:layout_width="20dp" android:layout_height="fill_parent" android:layout_marginRight="2dp"
+			      android:scaleType="centerInside" android:src="@drawable/wenhao" android:layout_toLeftOf="@id/login_findpwd"
+			    />
+ 			 </RelativeLayout>
+		</TableRow>
+		<TableRow>
+			<Button   android:id="@+id/login_tologin"
+				android:layout_width="fill_parent" android:layout_height="50dp"
+				android:layout_marginTop="10dp" android:textSize="22sp"
+				android:background="@drawable/btn_style_black" android:text="登       录"
+				android:textColor="#ffffff" />
+		</TableRow>
+		<TableRow>
+			<Button   android:id="@+id/login_usertest"
+				android:layout_width="fill_parent" android:layout_height="50dp"
+				android:textSize="22sp" android:layout_marginTop="10dp" 
+				android:background="@drawable/btn_style_black" android:text="游客体验"
+				android:textColor="#ffffff" />
+		</TableRow>
+		<TableRow >
+			 <RelativeLayout  android:layout_marginTop="30dp"
+			     android:gravity="center" android:layout_height="wrap_content"
+			     android:layout_width="fill_parent" 
+			 >
+ 			    <EditText   android:textSize="16sp"  android:text="用合作网站账号登陆"
+						android:background="@null" android:layout_width="fill_parent"
+						  android:layout_height="wrap_content" android:textColor="#fff"  android:gravity="center"
+				 />
+ 			 </RelativeLayout>
+		</TableRow>
+		<TableRow>
+		 <LinearLayout android:orientation="horizontal" 
+		     android:gravity="center_horizontal" android:layout_height="wrap_content"
+		     android:layout_width="fill_parent"  android:layout_marginTop="20dp"
+		 >
+		   <ImageButton android:id="@+id/login_sinaoauth" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"   android:background="@null"
+				  android:src="@drawable/icon_sina_drw"  
+				 />
+		   
+			<ImageButton android:id="@+id/login_weixinoauth" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"   android:background="@null" android:layout_marginLeft="20dp"
+				  android:src="@drawable/icon_weixin_drw" 
+				 />
+		     <ImageButton android:id="@+id/login_taooauth" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"   android:background="@null" android:layout_marginLeft="20dp"
+				  android:src="@drawable/icon_taobao_drw" 
+				 />
+		 </LinearLayout>
+ 		</TableRow>
+	</TableLayout>
+    
+	<RelativeLayout android:layout_width="fill_parent" android:visibility="gone"
+		android:layout_height="50dp" android:layout_alignParentBottom="true">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="80dp" android:orientation="horizontal"
+			android:gravity="center_horizontal">
+			<Button android:id="@+id/login_registe" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="注册账号"
+				android:textColor="#F0F0F0" android:background="@null"
+				android:textSize="16sp" />
+		</LinearLayout>
+	</RelativeLayout>
+</RelativeLayout>

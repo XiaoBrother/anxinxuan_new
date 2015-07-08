@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@color/page_bg_color" 
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:orientation="vertical">
+
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/villeagedesc_topview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" anxinxuan:title="农场描述"
+		anxinxuan:leftimgsrc="@drawable/icon_back"  anxinxuan:rightimgsrc="@drawable/icon_moreop"/>
+	<com.axinxuandroid.activity.view.ImageGalleryView anxinxuan:indexMode="down"   android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginTop="15dp" 
+		android:id="@+id/villeagedesc_imggallery" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" />
+	<ScrollView android:layout_width="fill_parent"   android:layout_marginLeft="15dp" android:layout_marginRight="15dp" 
+		android:layout_height="wrap_content">	
+	 <com.axinxuandroid.activity.view.XRTextView android:id="@+id/villeagedesc_desc"   
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				anxinxuan:xrPaddingLeft="2" anxinxuan:xrPaddingRight="2"
+ 				anxinxuan:xrTextColor="#6F6E71"
+				anxinxuan:xrLineSpacing="1.6"
+   				 />  
+  </ScrollView>
+</LinearLayout>

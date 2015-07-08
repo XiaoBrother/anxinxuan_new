@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/anxinxuan/!svn/ver/168/2/src/com/zxing/decoding
+END
+DecodeHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/zxing/decoding/DecodeHandler.java
+END
+InactivityTimer.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/anxinxuan/!svn/ver/168/2/src/com/zxing/decoding/InactivityTimer.java
+END
+Intents.java
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/anxinxuan/!svn/ver/168/2/src/com/zxing/decoding/Intents.java
+END
+FinishListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/zxing/decoding/FinishListener.java
+END
+DecodeFormatManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/anxinxuan/!svn/ver/168/2/src/com/zxing/decoding/DecodeFormatManager.java
+END
+DecodeThread.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/zxing/decoding/DecodeThread.java
+END
+CaptureActivityHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/zxing/decoding/CaptureActivityHandler.java
+END

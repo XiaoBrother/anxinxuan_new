@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+ <HEAD>
+  <TITLE>农场简介 </TITLE>
+  <META NAME="Generator" CONTENT="EditPlus">
+  <META NAME="Author" CONTENT="">
+  <META NAME="Keywords" CONTENT="">
+  <META NAME="Description" CONTENT="">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+ </HEAD>
+
+ <BODY>
+    <div id="villeage_text"  style="widht:200;height:300">
+    
+    </div>
+    
+   <script type="text/javascript">
+   
+	function setDesc(desc){
+  		document.getElementById("villeage_text").innerHTML=desc;
+	}
+	function getDesc(){
+         var desc= document.getElementById("villeage_text").innerHTML;
+         EditVilleageDescHtmlAndroid.saveDesc(desc);
+	}
+	EditVilleageDescHtmlAndroid.initDesc();
+  </script>
+ </BODY>
+</HTML>

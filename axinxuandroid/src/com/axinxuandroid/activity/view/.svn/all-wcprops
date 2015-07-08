@@ -1,0 +1,215 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view
+END
+TriangleView.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/TriangleView.java
+END
+TimeLineView.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/TimeLineView.java
+END
+VideoView.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/VideoView.java
+END
+SlipButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/SlipButton.java
+END
+UpdateNoticeDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/UpdateNoticeDialog.java
+END
+DragListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/DragListView.java
+END
+LetterSpacingTextView.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/LetterSpacingTextView.java
+END
+BatchListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/BatchListView.java
+END
+CommonBottomView.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/CommonBottomView.java
+END
+ScanCodeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/ScanCodeView.java
+END
+RefreshableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/RefreshableView.java
+END
+CommentAtClickSpan.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/CommentAtClickSpan.java
+END
+CameraView.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/CameraView.java
+END
+UserInfoView.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/UserInfoView.java
+END
+MyGridView.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/MyGridView.java
+END
+EditTabelView.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/EditTabelView.java
+END
+XRTextView.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/XRTextView.java
+END
+ShareWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/ShareWindow.java
+END
+ImageGalleryWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/ImageGalleryWindow.java
+END
+MoreWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/MoreWindow.java
+END
+RecordAudioView.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/RecordAudioView.java
+END
+MenuWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/MenuWindow.java
+END
+TemplateWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/TemplateWindow.java
+END
+RecordAudioViewV2.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/RecordAudioViewV2.java
+END
+ResourcesView.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/ResourcesView.java
+END
+CommonTopView.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/CommonTopView.java
+END
+UserFavoriteView.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/UserFavoriteView.java
+END
+PhotoBottomView.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/PhotoBottomView.java
+END
+TimeLineItemView.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/TimeLineItemView.java
+END
+RecordAudioViewStyleF.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/RecordAudioViewStyleF.java
+END
+UserVilleageView.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/UserVilleageView.java
+END
+CommentWindow.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/CommentWindow.java
+END
+.#CommonTopView.java.1.8
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/.%23CommonTopView.java.1.8
+END
+GetMoreView.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/GetMoreView.java
+END
+ImageGalleryView.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/view/ImageGalleryView.java
+END

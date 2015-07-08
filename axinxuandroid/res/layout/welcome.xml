@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         android:background="#8ABC1D"
+        >
+        
+      <ImageView android:id="@+id/wel_img"
+        android:layout_width="fill_parent" 
+        android:src="@drawable/welcome"
+        android:background="@null"
+        android:scaleType="fitEnd"
+         android:layout_alignParentBottom="true"
+        android:layout_height="fill_parent">
+    </ImageView>
+</RelativeLayout>

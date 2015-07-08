@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+	 android:orientation="vertical">
+    <LinearLayout android:id="@+id/imagegallery_upindexlayout"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+ 			android:gravity="center_horizontal"  >
+    </LinearLayout>
+	  
+		<LinearLayout android:id="@+id/imagegallery_gallerylayout"   
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:orientation="horizontal" android:layout_alignParentTop="true"
+			android:gravity="fill_horizontal">
+		</LinearLayout>
+	 <LinearLayout android:id="@+id/imagegallery_downindexlayout"   
+			android:layout_width="fill_parent" android:layout_height="50dp"  
+  			android:gravity="center"  >
+    </LinearLayout>
+</LinearLayout>

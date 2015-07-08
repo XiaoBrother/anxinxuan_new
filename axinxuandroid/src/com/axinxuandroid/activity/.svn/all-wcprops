@@ -1,0 +1,329 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity
+END
+CleanActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/CleanActivity.java
+END
+RecordDemoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/RecordDemoActivity.java
+END
+TaoBaoOAuthCallBackActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/TaoBaoOAuthCallBackActivity.java
+END
+EditRecordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/EditRecordActivity.java
+END
+SystemUpdateActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SystemUpdateActivity.java
+END
+SelectVilleageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SelectVilleageActivity.java
+END
+SelectPhotoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SelectPhotoActivity.java
+END
+AddBatchActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/AddBatchActivity.java
+END
+WelcomeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/WelcomeActivity.java
+END
+ProustActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/ProustActivity.java
+END
+AddVarietyActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/AddVarietyActivity.java
+END
+ResetPwdActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/ResetPwdActivity.java
+END
+RegistActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/RegistActivity.java
+END
+TakeCameraActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/TakeCameraActivity.java
+END
+UploadPhotoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/UploadPhotoActivity.java
+END
+TemplateSynchroniseActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/TemplateSynchroniseActivity.java
+END
+CommentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/CommentActivity.java
+END
+EditProustActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/EditProustActivity.java
+END
+SendPhoneNumActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SendPhoneNumActivity.java
+END
+VilleageInfoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/VilleageInfoActivity.java
+END
+TimelineActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/TimelineActivity.java
+END
+ValidPhoneNumActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/ValidPhoneNumActivity.java
+END
+RecordDetailedActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/RecordDetailedActivity.java
+END
+PhotoAlbumActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/PhotoAlbumActivity.java
+END
+TakeVideoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/TakeVideoActivity.java
+END
+UserPageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/UserPageActivity.java
+END
+SettingActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SettingActivity.java
+END
+SelectTypeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SelectTypeActivity.java
+END
+SelectBatchActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SelectBatchActivity.java
+END
+Appstart.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/Appstart.java
+END
+ValidSecurityCodeResultActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/ValidSecurityCodeResultActivity.java
+END
+SelectVarietyActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SelectVarietyActivity.java
+END
+SystemActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SystemActivity.java
+END
+VarietyBatchActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/VarietyBatchActivity.java
+END
+AddRecordActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/AddRecordActivity.java
+END
+VilleageDescActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/VilleageDescActivity.java
+END
+BatchManageActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/BatchManageActivity.java
+END
+PlayVideoActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/PlayVideoActivity.java
+END
+UserFovoriteActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/UserFovoriteActivity.java
+END
+NcpZsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/NcpZsActivity.java
+END
+EditVilleageDescActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/EditVilleageDescActivity.java
+END
+DraftActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/DraftActivity.java
+END
+UserCommentActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/UserCommentActivity.java
+END
+GuideAcitivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/GuideAcitivity.java
+END
+NotifyActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/NotifyActivity.java
+END
+LoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/LoginActivity.java
+END
+OAuthLoginActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/OAuthLoginActivity.java
+END
+DeleteResourceActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/DeleteResourceActivity.java
+END
+AboutAppActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/AboutAppActivity.java
+END
+SytemSetActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/SytemSetActivity.java
+END
+ScanCodeActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/ScanCodeActivity.java
+END
+MediaActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/MediaActivity.java
+END
+VisitHistoryActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/VisitHistoryActivity.java
+END
+PlayVideoHtmlActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/activity/PlayVideoHtmlActivity.java
+END

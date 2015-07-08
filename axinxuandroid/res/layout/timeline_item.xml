@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"   android:background="@drawable/timeline_bg"
+	android:layout_marginTop="28dp" android:layout_marginBottom="5dp"
+	android:orientation="horizontal">
+
+	<LinearLayout android:orientation="vertical" android:id="@+id/timeitem_layout"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:layout_marginLeft="36dp">
+
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:paddingLeft="47dp"
+			android:layout_marginTop="25dp" android:orientation="horizontal">
+			<FrameLayout android:layout_width="35dp"
+				android:layout_height="35dp" android:layout_marginTop="2dp">
+				<ImageView android:id="@+id/timeitem_userimg"
+					android:layout_width="fill_parent" android:layout_height="fill_parent"
+					android:scaleType="centerCrop" android:layout_centerVertical="true" />
+				<ImageView android:background="@drawable/yuanjiao"
+					android:layout_width="fill_parent" android:layout_height="fill_parent" />
+			</FrameLayout>
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dp"
+				android:orientation="vertical" android:gravity="top"
+				android:layout_marginTop="-2dp">
+				<TextView android:id="@+id/timeitem_name"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="top|left" android:textColor="#444"
+					android:textSize="16sp" />
+				<TextView android:id="@+id/timeitem_recordtime"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:gravity="top|left" android:textColor="#666"
+					android:textSize="14sp" />
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="fill_parent"  
+			android:layout_marginTop="3dp" android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_marginLeft="5dp" android:layout_height="wrap_content"
+				android:orientation="vertical">
+				<LinearLayout android:id="@+id/timeitem_audiolayout"
+					android:layout_width="fill_parent" android:layout_height="50dp"
+					android:orientation="vertical" android:background="@drawable/media_bg"
+					android:visibility="gone">
+					<LinearLayout android:layout_width="fill_parent" android:layout_marginRight="10dp"
+						android:layout_height="fill_parent" android:orientation="horizontal"
+						android:gravity="right">
+						<TextView android:id="@+id/timeitem_audioinfo"
+							android:layout_width="fill_parent" android:layout_height="fill_parent"
+							android:layout_marginRight="0.5dp" android:text="20''"
+							android:textSize="18sp" android:textColor="#8ABC1D"
+							android:gravity="center_vertical|center_horizontal" />
+						<ImageView  android:layout_width="45dp"
+							android:id="@+id/timeitem_audioimg" android:scaleType="centerInside"
+							android:layout_height="fill_parent" android:src="@drawable/playaudioicon"
+					    />
+					    <ImageView  android:layout_width="45dp" android:visibility="gone"
+							android:id="@+id/timeitem_audioimg_anima" android:scaleType="centerInside"
+							android:layout_height="fill_parent" android:src="@drawable/play_audio_anim"
+					    />
+					</LinearLayout>
+ 				</LinearLayout>
+				<LinearLayout android:id="@+id/timeitem_videolayout"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:orientation="vertical" 
+					android:visibility="gone">
+					<RelativeLayout android:layout_width="fill_parent"  android:layout_margin="10dp"
+						android:layout_height="200dp"     android:background="#000"
+						 >
+						 
+					    <VideoView    android:id="@+id/timeitem_playvideo"  
+					 	        android:layout_width="fill_parent"  android:layout_centerInParent="true"
+						        android:layout_height="fill_parent"  />
+  						<ProgressBar
+					            android:id="@+id/timeitem_play_loading"
+					            android:layout_width="50dp"
+					            android:layout_height="50dp"   android:layout_centerInParent="true"
+					            android:indeterminateDrawable="@drawable/progressbar" />
+  						<ImageView
+					            android:id="@+id/timeitem_play_replay"  android:visibility="gone"
+					            android:layout_width="50dp"  android:src="@drawable/playvideoicon"
+					            android:layout_height="50dp"   android:layout_centerInParent="true"
+					            />
+  						<TextView
+					            android:id="@+id/timeitem_play_msg"   android:visibility="gone"
+					            android:layout_width="fill_parent"  android:gravity="center"
+					            android:textColor="@color/white" 
+					            android:layout_height="fill_parent"   android:layout_centerInParent="true"
+					          />
+					</RelativeLayout>
+ 				</LinearLayout>
+				<ImageView android:id="@+id/timeitem_loadview"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal|center_vertical"
+					android:enabled="false" android:visibility="gone" />
+				<RelativeLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:layout_margin="3dp">
+					<ImageView android:id="@+id/timeitem_image"
+						android:visibility="gone" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" 
+						android:background="@null" android:gravity="center_horizontal"
+						android:scaleType="fitStart" />
+					<ImageView android:id="@+id/timeitem_fanjiao_image"
+						android:visibility="gone" android:src="@drawable/fanjiao"
+						android:layout_alignParentBottom="true" android:layout_width="wrap_content"
+						android:layout_height="wrap_content" android:gravity="center_horizontal"
+						android:scaleType="fitEnd" />
+				</RelativeLayout>
+
+				<TextView android:id="@+id/timeitem_context"
+					android:visibility="gone" android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:layout_margin="3dp"
+					android:gravity="top" android:textColor="#6F6E71"
+					android:lineSpacingExtra="6dp" android:lineSpacingMultiplier="1"
+					android:textSize="17sp" />
+
+				<com.axinxuandroid.activity.view.EditTabelView
+					android:id="@+id/timeitem_tablelayout" android:layout_margin="3dp"
+					android:layout_width="fill_parent" android:layout_height="wrap_content"
+					android:visibility="gone" />
+				 
+			</LinearLayout>
+
+			<LinearLayout android:orientation="horizontal" android:background="#E3E3E3"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+			    android:paddingBottom="1dp"
+				>
+				<LinearLayout android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="50dp"
+					 android:gravity="center_vertical"
+					  android:id="@+id/timeitem_bottom_banner_lay"
+					android:visibility="gone">
+					<LinearLayout android:id="@+id/timeitem_edit" style="@style/time_line_op_layout">
+						<ImageView android:src="@drawable/timeitem_edit" style="@style/time_line_op_img" />
+					</LinearLayout>
+					<LinearLayout android:id="@+id/timeitem_zan" style="@style/time_line_op_layout">
+						<ImageButton android:src="@drawable/timeitem_zan"
+							style="@style/time_line_op_img" />
+						<ImageView  android:src="@drawable/add_one"
+						     android:layout_width="25dp"
+						     android:id="@+id/timeitem_zan_anim" android:layout_marginLeft="-25dp" android:layout_marginTop="-15dp"
+							style="@style/time_line_op_img" android:visibility="gone"/>
+					</LinearLayout>
+					<LinearLayout android:id="@+id/timeitem_delete" style="@style/time_line_op_layout">
+						<ImageButton android:src="@drawable/timeitem_delete"
+							style="@style/time_line_op_img" />
+					</LinearLayout>
+
+					<LinearLayout android:id="@+id/timeitem_pinglun"
+						style="@style/time_line_op_layout">
+						<ImageView android:src="@drawable/timeitem_pinglun"
+							style="@style/time_line_op_img" />
+					</LinearLayout>
+					<LinearLayout android:id="@+id/timeitem_share" style="@style/time_line_op_layout">
+						<ImageButton android:src="@drawable/timeitem_share"
+							style="@style/time_line_op_img" />
+					</LinearLayout>
+
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="80dp"  
+		android:layout_height="match_parent">
+ 		<LinearLayout android:id="@+id/timeitem_leftlayout"
+			android:layout_width="80dp" android:layout_height="80dp"
+			android:background="@drawable/lvyuan" android:gravity="center_horizontal"
+			android:layout_marginTop="13dp" android:layout_marginLeft="6dp"
+			android:orientation="vertical">
+			<TextView android:id="@+id/timeitem_label"
+				android:layout_width="wrap_content" android:layout_height="47dp"
+				android:paddingTop="20dp" android:textColor="#ffffff"
+				android:textSize="14sp" />
+
+			<TextView android:id="@+id/timeitem_date"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginTop="-5dp" android:textColor="#ffffff"
+				android:textSize="12sp" />
+		</LinearLayout>
+ 	</LinearLayout>
+</RelativeLayout>
+
+
+

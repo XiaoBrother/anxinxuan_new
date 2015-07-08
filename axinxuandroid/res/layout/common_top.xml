@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="wrap_content"
+ 	android:background="#8abc1d"  
+	android:id="@+id/commontop_mainlay"
+	android:orientation="horizontal"
+ 	>
+	<RelativeLayout
+	 android:layout_width="fill_parent"
+	 android:layout_height="60dp"
+   	>
+   	  <LinearLayout
+   	    android:id="@+id/commontop_leftlay" android:orientation="horizontal"   
+   	    android:layout_width="65dp" android:layout_height="fill_parent" 
+    
+   	    android:layout_alignParentLeft="true"  android:visibility="invisible" android:gravity="center"
+   	  >
+	   	  <ImageButton  android:id="@+id/commontop_left"  android:layout_marginLeft="-5dp"
+				android:layout_width="32dp" android:layout_height="fill_parent"
+ 				android:background="@null" android:gravity="center" android:scaleType="centerInside"
+	 			android:src="@null" />
+	 	   <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+ 	 	     android:clickable="true"
+	 	     android:visibility="gone"
+	 	   >
+	 	     <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	 	        android:gravity="center"
+ 	 	      android:textSize="16sp" android:textColor="#ffffff"   android:id="@+id/commontop_lefttext"
+	 	     />
+	 	   </LinearLayout>
+    	  </LinearLayout>
+	 
+   		<LinearLayout
+   		  android:layout_width="wrap_content"
+    	  android:layout_centerInParent="true"
+   		  android:orientation="vertical"
+   		  android:layout_marginLeft="60dp"
+   		  android:layout_marginRight="60dp"
+   		  android:gravity="center_vertical|center_horizontal"
+   		  android:layout_height="fill_parent"
+      		>
+   		 <TextView android:layout_width="wrap_content" android:id="@+id/commontop_title"
+			android:layout_height="wrap_content"  android:ellipsize="end"
+  			android:text="@null" android:textColor="#ffffff" android:singleLine="true"
+			android:textSize="20sp" android:textStyle="normal"/>
+		<TextView android:layout_width="wrap_content" android:id="@+id/commontop_subtitle"
+			android:layout_height="wrap_content"  android:textStyle="normal"
+  			android:text="@null" android:textColor="#ffffff" android:layout_marginBottom="2dp"
+  			android:visibility="gone"
+			android:textSize="15sp"/>
+   		</LinearLayout>
+		
+       <LinearLayout
+   	    android:id="@+id/commontop_rightlay" android:orientation="horizontal" android:paddingLeft="5dp" 
+   	    android:layout_width="65dp" android:layout_height="fill_parent"   
+   	    android:layout_alignParentRight="true" android:visibility="invisible" android:gravity="center"
+    	   >
+   	    
+		<ImageButton android:id="@+id/commontop_right"   android:layout_marginRight="-5dp"
+			 android:gravity="center" android:scaleType="centerInside"
+			android:layout_width="32dp" android:layout_height="fill_parent"
+			android:src="@null"  android:background="@null"
+ 		 />
+ 		 <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  	 	     android:clickable="true" 
+	 	     android:visibility="gone"
+	 	   >
+	 	     <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" 
+	 	     android:gravity="center"  
+ 	 	      android:textSize="16sp" android:textColor="#ffffff"   android:id="@+id/commontop_righttext"
+	 	     />
+	 	   </LinearLayout>
+ 		</LinearLayout>
+	</RelativeLayout>
+  	 
+</LinearLayout>

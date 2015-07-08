@@ -1,0 +1,161 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db
+END
+ProustDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/ProustDB.java
+END
+OAuthAccountDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/OAuthAccountDB.java
+END
+SystemSetDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/SystemSetDB.java
+END
+IntelligenceDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/IntelligenceDB.java
+END
+CommentDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/CommentDB.java
+END
+VilleagePhotoDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/VilleagePhotoDB.java
+END
+RecordResourcesDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/RecordResourcesDB.java
+END
+TemplateDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/TemplateDB.java
+END
+CategoryDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/CategoryDB.java
+END
+RecordDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/RecordDB.java
+END
+UserDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/UserDB.java
+END
+UserFavoriteDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/UserFavoriteDB.java
+END
+VilleageBannerDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/VilleageBannerDB.java
+END
+UserVisitHistoryDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/UserVisitHistoryDB.java
+END
+BatchLabelDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/BatchLabelDB.java
+END
+BatchDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/BatchDB.java
+END
+VarietyDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/VarietyDB.java
+END
+SystemLabelDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/SystemLabelDB.java
+END
+SystemDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/SystemDB.java
+END
+SystemLogDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/SystemLogDB.java
+END
+CategoryProcedureDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/CategoryProcedureDB.java
+END
+AdvocateDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/AdvocateDB.java
+END
+SystemNoticeDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/SystemNoticeDB.java
+END
+UserVilleageDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/UserVilleageDB.java
+END
+NetUpdateRecordDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/NetUpdateRecordDB.java
+END
+VilleageDB.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/db/VilleageDB.java
+END

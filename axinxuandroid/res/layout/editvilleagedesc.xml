@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	 xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+	 android:orientation="vertical"
+ 	android:background="#fff">
+   <com.axinxuandroid.activity.view.CommonTopView
+	     android:id="@+id/editvilleagedesc_topview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:lefttext="返回" 
+         anxinxuan:title="编辑简介"
+         anxinxuan:righttext="保存" 
+        />
+  <EditText
+     android:id="@+id/editvilleagedesc_editetext"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="15dp" android:padding="8dp"
+      android:background="@drawable/edittext_bg"
+  />
+</LinearLayout>

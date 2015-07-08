@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	 android:orientation="vertical" android:paddingLeft="8dp"
+ 	android:layout_width="fill_parent" android:layout_height="wrap_content">
+ 	<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+ 	 android:layout_marginTop="5dp"
+ 	>
+ 	 <ImageView  android:layout_width="30dp" android:layout_height="30dp"
+ 	 android:background="@null" android:src="@drawable/icon" android:scaleType="centerInside"/>
+ 	 <TextView  
+ 	    android:id="@+id/systemupdate_progressinfo"  
+        android:layout_width="wrap_content"  
+        android:layout_height="30dp"  
+        android:layout_marginLeft="5dp"   
+        android:gravity="center_vertical"
+        android:text="正在下载："
+        android:textColor="#000" />  
+	 <TextView  
+        android:id="@+id/systemupdate_progresstext"  
+        android:layout_width="wrap_content"  
+        android:layout_height="30dp"  
+        android:layout_marginLeft="5dp"   
+        android:gravity="center_vertical"
+        android:text="0%"
+        android:textColor="#000" />  
+     
+	</LinearLayout>
+       <ProgressBar style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="5dp"
+		android:id="@+id/systemupdate_progressbar" android:layout_width="fill_parent"
+ 		android:layout_height="wrap_content"></ProgressBar>
+ </LinearLayout>

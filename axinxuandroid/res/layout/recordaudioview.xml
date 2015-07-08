@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+       <LinearLayout
+        android:layout_width="fill_parent" android:orientation="horizontal"
+        android:layout_height="wrap_content" android:gravity="center"
+         >
+         <ImageButton  android:layout_marginRight="13dp" android:scaleType="centerInside"
+          android:layout_width="90dp"   android:background="@null" 
+          android:layout_height="wrap_content" android:src="@drawable/audiorecord_delete" android:id="@+id/recordaudio_delete"
+         />
+          <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal" 
+          android:gravity="center"  
+         >
+         <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="00:" android:textColor="#9EA3B6"
+          android:textSize="35sp"  android:textStyle="bold"
+          android:layout_alignParentLeft="true"
+          android:id="@+id/recordaudio_timetextmin"
+          />
+         <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="00" android:textColor="#9EA3B6"
+          android:textSize="35sp" android:textStyle="bold"
+          android:layout_toRightOf="@id/recordaudio_timetextmin"
+          android:id="@+id/recordaudio_timetextsec"
+         />
+        </LinearLayout>
+        <ImageButton android:layout_width="90dp"  android:background="@null" android:id="@+id/recordaudio_play"
+          android:layout_height="wrap_content" android:src="@drawable/audiorecord_start"   android:scaleType="centerInside"
+          android:layout_marginLeft="13dp"
+         />
+         <ImageButton android:layout_width="90dp"  android:background="@null" android:id="@+id/recordaudio_stop"
+          android:layout_height="wrap_content" android:src="@drawable/audiorecord_stop"  android:visibility="gone"
+          android:layout_marginLeft="13dp" android:scaleType="centerInside"
+         />
+       </LinearLayout>    
+ </LinearLayout>

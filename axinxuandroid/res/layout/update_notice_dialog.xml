@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/update_notice_wind_bg"
+    android:gravity="center_horizontal" >
+
+    <ScrollView  android:layout_marginBottom="10dp"
+            android:layout_marginLeft="35dp"  android:layout_marginTop="80dp"
+            android:layout_marginRight="25dp" 
+           android:scrollbars="none"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/update_notice_wind_msgtext"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:lineSpacingExtra="6dp"
+            android:lineSpacingMultiplier="1"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/update_notice_wind_cancelbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:background="@null"
+        android:scaleType="centerInside"
+        android:src="@drawable/close_g" />
+
+    <ImageButton
+        android:id="@+id/update_notice_wind_okbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@null"
+        android:src="@drawable/down_icon" />
+
+</RelativeLayout>

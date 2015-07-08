@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="65dp" android:background="#000"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:orientation="vertical">
+	<com.axinxuandroid.activity.view.TriangleView
+		android:layout_width="fill_parent" android:layout_height="0dp"
+		android:id="@+id/commonbtm_triangleview">
+	</com.axinxuandroid.activity.view.TriangleView>
+
+	<LinearLayout android:layout_width="fill_parent"   android:layout_marginTop="10dp"
+		android:layout_height="55dp" android:orientation="horizontal"
+		>
+		
+	    
+	    <LinearLayout android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"   android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/commonbtm_img_saoma"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:clickable="false" android:scaleType="centerInside"
+					android:src="@drawable/bar_serach" />
+
+				<TextView android:id="@+id/commonbtm_text_saoma"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="查询" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+ 		</LinearLayout>
+	    
+		<LinearLayout android:layout_width="fill_parent"  
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1"
+			android:visibility="gone">
+			<LinearLayout android:layout_width="fill_parent"  android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/commonbtm_img_collect"  android:clickable="false"
+				     android:layout_width="30dp"
+					android:layout_height="30dp" android:scaleType="centerInside"
+					android:src="@drawable/user_collect" />
+
+				<TextView android:id="@+id/commonbtm_text_collect"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="收藏" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+ 		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"  
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1"
+			android:visibility="gone">
+			<LinearLayout android:layout_width="fill_parent"  android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/commonbtm_img_pici"  android:clickable="false"
+					 android:layout_width="30dp"
+					android:layout_height="30dp" android:scaleType="centerInside"
+					android:src="@drawable/tab_weixin_pressed" />
+				<TextView android:id="@+id/commonbtm_text_pici"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="批次" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+		 </LinearLayout>
+
+		
+		 
+		
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"  android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/commonbtm_img_jilu"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:clickable="false" android:scaleType="centerInside"
+					android:src="@drawable/quik_record" />
+
+				<TextView android:id="@+id/commonbtm_text_jilu"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="记录" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+ 		</LinearLayout>
+
+		
+
+		<LinearLayout android:layout_width="fill_parent"  
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent" android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/commonbtm_img_more"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:clickable="false" android:scaleType="centerInside"
+					android:src="@drawable/mycion" />
+
+				<TextView android:id="@+id/commonbtm_text_more"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="我的" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+
+
+</LinearLayout>

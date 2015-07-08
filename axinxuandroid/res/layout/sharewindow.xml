@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+ 	 >
+ 	 <LinearLayout android:layout_width="fill_parent"
+ 	        android:layout_centerInParent="true"
+			android:layout_height="180dp" android:orientation="vertical"
+			android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+			android:background="@drawable/shape_corners">
+  			<LinearLayout android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:background="#D3D2C5" android:gravity="center_vertical"
+ 				>
+				<LinearLayout android:orientation="horizontal"
+					android:layout_width="fill_parent" android:layout_height="60dp"
+					android:padding="10dp" android:layout_marginBottom="0.5dp"
+					android:id="@+id/share_sinaweibo" android:background="#ffffff">
+					<ImageView style="@style/share_window_icon_img" android:src="@drawable/share_icon_sina" />
+					<TextView  style="@style/share_window_text" android:text="分享到微博"  />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal"
+					android:id="@+id/share_moments" android:layout_width="fill_parent"
+					android:layout_height="60dp" android:padding="10dp" android:layout_marginBottom="0.5dp"
+					android:background="#ffffff">
+					<ImageView style="@style/share_window_icon_img" android:src="@drawable/share_icon_moments" />
+					<TextView style="@style/share_window_text" android:text="分享到朋友圈"  />
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal"
+					android:id="@+id/share_webchat" android:layout_width="fill_parent"
+					android:layout_height="60dp" android:padding="10dp"
+					android:layout_marginBottom="0.5dp" android:background="#ffffff">
+                    <ImageView style="@style/share_window_icon_img" android:src="@drawable/share_icon_weixin" />
+					<TextView  	android:text="分享到微信" style="@style/share_window_text"/>
+				</LinearLayout>
+				<LinearLayout android:orientation="horizontal"
+					android:id="@+id/share_laiwang" android:layout_width="fill_parent"
+					android:layout_height="60dp" android:padding="10dp" android:visibility="gone"
+					 android:background="#ffffff">
+					<TextView   android:text="分享到来往" style="@style/share_window_text"/>
+				</LinearLayout>
+ 			</LinearLayout>
+		</LinearLayout>
+</RelativeLayout>

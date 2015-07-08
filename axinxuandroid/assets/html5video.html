@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+ 
+ 
+  <div id="videodiv">
+  
+  </div>
+ <script type="text/javascript">
+   function addvideo(path){
+     var videodiv=document.getElementById("videodiv");
+     videodiv.innerHTML="";
+
+     var html= '<video   width="100%" height="99%"  controls="controls" autoplay="autoplay"  ><source src="' +path+ '"></video>';
+     document.write(html);
+    }   
+   addvideo('http://f.youku.com/player/getFlvPath/sid/139564677296560_01/st/mp4/fileid/03002001005292C0B6EECE13AA0B9439B53F03-2AE4-880B-07DA-296B30222EC6?K=a929abc0c6f7deaa261d93de&hd=0&ts=10&ctype=40');
+ </script>
+</body>
+</html>

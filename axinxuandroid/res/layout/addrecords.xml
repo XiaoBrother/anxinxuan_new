@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" android:id="@+id/addrecord_rootview"
+	android:background="@color/page_bg_color">
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_marginBottom="50dp" android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<com.axinxuandroid.activity.view.CommonTopView
+			android:id="@+id/addrecord_topview" android:layout_width="fill_parent"
+			android:layout_height="wrap_content" anxinxuan:title="创建记录"
+			anxinxuan:lefttext="取消" anxinxuan:righttext="发布" />
+		<ScrollView android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+				android:paddingLeft="12dp" android:paddingRight="10dp"
+				android:orientation="vertical">
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_marginTop="12dp" android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<EditText android:id="@+id/addrecord_text"
+						android:padding="8dp" android:layout_width="fill_parent"
+						android:layout_height="135dp" android:hint="请填写您要发布的信息"
+						android:gravity="top" android:textColorHint="#ddd"
+						android:background="@drawable/edittext_bg"
+						android:selectAllOnFocus="true" />
+					<com.axinxuandroid.activity.view.RecordAudioViewV2
+						android:id="@+id/addrecord_audioview" android:visibility="gone"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+					<com.axinxuandroid.activity.view.EditTabelView
+						android:id="@+id/addrecord_edittable" android:visibility="gone"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+				</LinearLayout>
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="55dp" android:layout_marginTop="12dp"
+					android:gravity="center_horizontal" android:orientation="vertical">
+					<Button android:id="@+id/addrecord_audio"
+						android:layout_width="fill_parent" android:layout_height="fill_parent"
+						android:layout_centerVertical="true" style="@style/common_button_setting"
+						android:text="      按住说话" />
+					<ImageView android:layout_width="26dp"
+						android:layout_height="wrap_content" android:background="@drawable/audioicon"
+						android:layout_centerInParent="true" android:layout_marginTop="-42dp"
+						android:layout_marginRight="55dp"></ImageView>
+				</LinearLayout>
+
+				<LinearLayout android:layout_width="fill_parent" android:layout_marginTop="10dp"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:layout_marginBottom="50dp">
+					<ScrollView android:layout_width="fill_parent"
+						android:layout_height="fill_parent">
+						<LinearLayout android:layout_width="fill_parent"
+							android:layout_height="fill_parent" android:orientation="vertical">
+							<com.axinxuandroid.activity.view.ResourcesView
+								android:layout_width="fill_parent" android:layout_height="wrap_content"
+								android:id="@+id/addrecord_resourceview" />
+
+						</LinearLayout>
+					</ScrollView>
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:orientation="horizontal" android:background="#262223"
+		android:layout_height="60dp" android:layout_alignParentBottom="true">
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"
+				android:clickable="true" android:gravity="center"
+				android:orientation="vertical" android:layout_height="fill_parent">
+				<ImageView android:id="@+id/addrecord_location"
+					android:clickable="false" android:layout_width="30dp"
+					android:layout_height="30dp" android:scaleType="centerInside"
+					android:src="@drawable/location_click" />
+				<TextView  
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="位置" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+			<ImageView android:layout_width="4dp"
+				android:layout_height="fill_parent" android:background="@drawable/bottomview_line">
+			</ImageView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"
+				android:clickable="true" android:gravity="center"
+				android:orientation="vertical" android:layout_height="fill_parent">
+				<ImageView android:id="@+id/addrecord_camera"
+					android:clickable="false" android:layout_width="30dp"
+					android:layout_height="30dp" android:scaleType="centerInside"
+					android:src="@drawable/btn_cameraicon" />
+				<TextView  
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="拍照" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+			<ImageView android:layout_width="4dp"
+				android:layout_height="fill_parent" android:background="@drawable/bottomview_line">
+			</ImageView>
+		</LinearLayout>
+		
+		
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"
+				android:clickable="true" android:gravity="center"
+				android:orientation="vertical" android:layout_height="fill_parent">
+ 				<ImageView android:id="@+id/addrecord_imglibrary" android:clickable="false"
+				android:layout_width="30dp" android:layout_height="30dp"
+				  android:scaleType="centerInside"
+				android:src="@drawable/btn_galleryicon" />
+				<TextView  
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="相册" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+			<ImageView android:layout_width="4dp"
+				android:layout_height="fill_parent" android:background="@drawable/bottomview_line">
+			</ImageView>
+		</LinearLayout>
+		
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"
+				android:clickable="true" android:gravity="center"
+				android:orientation="vertical" android:layout_height="fill_parent">
+ 				<ImageView android:id="@+id/addrecord_video" android:clickable="false"
+				android:layout_width="30dp" android:layout_height="30dp"
+				  android:scaleType="centerInside"
+				android:src="@drawable/btn_videoicon" />
+				<TextView  
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="录像" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+			<ImageView android:layout_width="4dp"
+				android:layout_height="fill_parent" android:background="@drawable/bottomview_line">
+			</ImageView>
+		</LinearLayout>
+		
+		
+		
+		
+		  <LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"
+				android:clickable="true" android:gravity="center"
+				android:orientation="vertical" android:layout_height="fill_parent">
+ 				<ImageView android:id="@+id/addrecord_tablebtn" android:clickable="false"
+				android:layout_width="30dp" android:layout_height="30dp"
+				  android:scaleType="centerInside"
+				android:src="@drawable/tableicon_disable" />
+				<TextView  
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="表格" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+			<ImageView android:layout_width="4dp"
+				android:layout_height="fill_parent" android:background="@drawable/bottomview_line">
+			</ImageView>
+		</LinearLayout>
+
+
+       <LinearLayout android:layout_width="fill_parent" android:visibility="gone"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"
+				android:clickable="true" android:gravity="center"
+				android:orientation="vertical" android:layout_height="fill_parent">
+ 				<ImageView android:id="@+id/addrecord_textbtn" android:clickable="false"
+				android:layout_width="30dp" android:layout_height="30dp"
+				  android:scaleType="centerInside"
+				android:src="@drawable/btn_commenticon" />
+				<TextView  
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="文字" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+			<ImageView android:layout_width="4dp"
+				android:layout_height="fill_parent" android:background="@drawable/bottomview_line">
+			</ImageView>
+		</LinearLayout>
+		
+
+	</LinearLayout>
+
+
+
+</RelativeLayout>

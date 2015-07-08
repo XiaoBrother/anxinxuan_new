@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="match_parent"
+	android:background="@color/page_bg_color" android:orientation="vertical">
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/selectvilleage_topview" anxinxuan:title="选择农场"
+		anxinxuan:leftimgsrc="@drawable/icon_back">
+
+	</com.axinxuandroid.activity.view.CommonTopView>
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_margin="15dp">
+		<ListView android:id="@+id/selectvilleage_list"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:divider="#aa9E9C9B" android:dividerHeight="0.5dp"
+			android:fadingEdge="vertical" android:cacheColorHint="#00000000"
+			android:background="@drawable/shape_corners">
+
+		</ListView>
+	</LinearLayout>
+</LinearLayout>

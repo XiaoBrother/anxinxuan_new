@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task
+END
+TaskExcute.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/TaskExcute.java
+END
+TaskResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/TaskResult.java
+END
+Task.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/Task.java
+END
+TaskFinishEventHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/TaskFinishEventHandler.java
+END
+CompanyInfoTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/CompanyInfoTask.java
+END
+RegisteTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/RegisteTask.java
+END
+DefaultTaskFinishEventHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/DefaultTaskFinishEventHandler.java
+END
+LoginTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/LoginTask.java
+END
+ConnectTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/ConnectTask.java
+END
+TaskManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/xmpp/client/connect/task/TaskManager.java
+END

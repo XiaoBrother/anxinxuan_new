@@ -1,0 +1,9 @@
+1.Eclipse无法查看data文件夹
+  
+  首先将手机root，获取root权限，
+  启动cmd 进入 android sdk 的tools目录
+ 运行：adb shell
+ 运行：su 
+ 运行：chomd -R 777 /data 
+ 
+ 2. 查看签名：cmd  >keytool -printcert -file CERT.RSA

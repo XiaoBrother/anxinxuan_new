@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/page_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.axinxuandroid.activity.view.CommonTopView
+        android:id="@+id/valid_s_result_topview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        anxinxuan:leftimgsrc="@drawable/icon_back"
+        anxinxuan:title="防伪查询" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="1dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/valid_s_result_icon" />
+
+        <TextView
+            android:id="@+id/valid_sd_result_qcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="正在查询中..." android:layout_marginTop="20dp"
+            android:textColor="#959595"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/valid_sd_result_qinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""  android:layout_marginTop="20dp"
+            android:textColor="#555555"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"  android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <Button  android:id="@+id/valid_sd_result_cont"
+                style="@style/common_button_setting2"
+                android:layout_width="wrap_content" 
+                android:layout_height="wrap_content"  
+                android:text="继续查询" />
+             <Button android:id="@+id/valid_sd_result_qzs" android:layout_marginLeft="20dp"
+                style="@style/common_button_setting2"
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"
+                android:text="查看追溯信息" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+	         <LinearLayout android:visibility="gone"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:paddingLeft="15dp"  android:paddingRight="15dp"
+	            android:orientation="vertical" >
+	
+	             <TextView android:layout_marginTop="20dp"
+	 	            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="商品详细信息"
+		            android:textColor="#555555" android:textStyle="bold"
+		            android:textSize="18sp" />
+	             <com.axinxuandroid.activity.view.EditTabelView  android:layout_marginTop="10dp"
+							android:id="@+id/valid_sd_result_edittable"   
+							android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader
+END
+IRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/IRequest.java
+END
+IYoukuUploader.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/IYoukuUploader.java
+END
+VideoInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/VideoInfo.java
+END
+IUploader.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/IUploader.java
+END
+Config.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/Config.java
+END
+YoukuUploader.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/YoukuUploader.java
+END
+Api.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/Api.java
+END
+IUploadResponseHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/IUploadResponseHandler.java
+END
+Uploader.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/Uploader.java
+END
+Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/anxinxuan/!svn/ver/168/2/src/com/youku/uploader/Util.java
+END

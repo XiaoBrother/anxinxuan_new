@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent" android:layout_height="wrap_content"  
+ 	android:orientation="horizontal" android:gravity="center_vertical">
+	<LinearLayout android:layout_width="70dp" android:orientation="horizontal"
+	    android:gravity="center_horizontal|center_vertical"
+		android:layout_height="90dp"> 
+		<ImageView android:id="@+id/proust_item_nums"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:background="@null" android:scaleType="centerInside"
+			  />
+		<ImageView android:id="@+id/proust_item_numf"   android:layout_marginLeft="-7dp"
+			android:layout_width="wrap_content" android:layout_height="fill_parent"
+			android:background="@null" android:scaleType="centerInside" />
+	</LinearLayout>
+
+ 	<LinearLayout android:layout_width="fill_parent"  android:layout_marginRight="8dp"
+		android:orientation="vertical" android:layout_height="fill_parent"
+		android:gravity="center_vertical" >
+		<TextView android:id="@+id/proust_item_question"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textSize="17sp" android:textColor="#8abc1d"
+			android:lineSpacingExtra="2dp"  
+		        android:lineSpacingMultiplier="1"
+			 >
+		</TextView>
+		<TextView android:id="@+id/proust_item_answer" android:lineSpacingExtra="2dp"
+		        android:lineSpacingMultiplier="1"  
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textSize="15sp" android:textColor="#999">
+		</TextView>
+	</LinearLayout>
+
+
+
+
+</LinearLayout>

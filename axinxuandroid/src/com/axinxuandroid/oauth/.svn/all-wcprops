@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/oauth
+END
+OAuthResult.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/oauth/OAuthResult.java
+END
+SinaOAuthListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/oauth/SinaOAuthListener.java
+END
+OAuthConstant.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/oauth/OAuthConstant.java
+END
+WeiXinOAuthListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/oauth/WeiXinOAuthListener.java
+END
+TaoBaoOAuthListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/oauth/TaoBaoOAuthListener.java
+END
+QQWeiBoOAuthListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/oauth/QQWeiBoOAuthListener.java
+END
+YukuOAuth.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/oauth/YukuOAuth.java
+END

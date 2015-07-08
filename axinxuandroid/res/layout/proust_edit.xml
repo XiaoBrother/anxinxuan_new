@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/page_bg_color"
+	    android:orientation="vertical"
+        >
+       <com.axinxuandroid.activity.view.CommonTopView
+	     android:id="@+id/editproust_topview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:title="普鲁斯特问卷"
+         anxinxuan:leftimgsrc="@drawable/icon_back"
+       />
+       <LinearLayout android:layout_width="fill_parent" android:orientation="vertical"
+		android:layout_height="wrap_content" android:layout_marginTop="15dp"
+		android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+		<com.axinxuandroid.activity.view.XRTextView
+		   android:id="@+id/editproust_question"
+		   android:layout_width="fill_parent"  
+		   android:layout_height="wrap_content"
+		   anxinxuan:xrTextSize="19" 
+  		   anxinxuan:xrTextColor="#8abc1d"
+		/>
+		
+		   <FrameLayout android:layout_width="fill_parent" android:layout_marginTop="15dp"
+				 android:layout_height="150dp">
+				<ImageView   android:layout_width="fill_parent"  android:layout_height="fill_parent"
+				   android:background="@drawable/edittext_bg"
+				 ></ImageView>
+				<EditText android:id="@+id/editproust_answer" android:layout_width="match_parent"
+					android:layout_height="fill_parent"  
+					android:gravity="top|left" android:textColor="#999"
+					 android:textColorHint="#CECED1"
+					android:background="#FFFFFF" android:textSize="17sp"
+					android:layout_margin="3dp"  android:paddingLeft="15dp" android:paddingTop="15dp"
+					  />
+			</FrameLayout>
+		 
+		<Button android:id="@+id/editproust_save" android:layout_width="fill_parent"
+			android:layout_height="50dp" android:text="保存"  
+			android:layout_marginTop="15dp"
+			 style="@style/common_button_setting"/>
+	</LinearLayout>
+</LinearLayout>

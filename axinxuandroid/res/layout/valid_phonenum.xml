@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <com.axinxuandroid.activity.view.CommonTopView
+        android:id="@+id/validphonenum_topview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        anxinxuan:leftimgsrc="@drawable/icon_back"
+        anxinxuan:title="填写校验码" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/validphonenum_topview" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:stretchColumns="0" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="15dp"
+                    android:gravity="center_vertical"
+                    android:text="请输入收到的短信校验码"
+                    android:textColor="#595959"
+                    android:textSize="13sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <EditText
+                    android:id="@+id/validphonenum_num_edit"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/shape_corners"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/validphonenum_tonext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="15dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/shape_corner_button"
+                    android:text="下一步"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                     android:gravity="center_horizontal"
+                     android:orientation="horizontal" >
+                     <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/shape_corner_resend_button"
+                        android:gravity="center_horizontal"  android:paddingLeft="10dp"  android:paddingRight="10dp"
+                        android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/validphonenum_resend"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:background="@null"
+                            android:gravity="center"
+                             android:paddingRight="5dp"
+                            android:text=""
+                            android:textColor="#A0A0A0"
+                            android:textSize="14sp" />
+
+                       
+                    </LinearLayout>
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

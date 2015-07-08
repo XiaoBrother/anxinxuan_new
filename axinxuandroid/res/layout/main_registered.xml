@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eee"
+    android:orientation="vertical" 
+    android:gravity="center_horizontal">
+     
+    <com.axinxuandroid.activity.view.CommonTopView
+         android:id="@+id/registe_topview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:title="输入密码"
+         anxinxuan:leftimgsrc="@drawable/icon_back"
+       />
+     <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registe_topview"
+         >
+ 	  <TableLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" 
+			android:stretchColumns="0" >
+ 			<TableRow>
+  			    <TextView android:layout_width="fill_parent"  android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginTop="15dp"
+						android:layout_height="fill_parent" android:text="请输入密码"
+					     android:textColor="#686868" android:gravity="center_vertical"
+						android:textSize="15sp"    />
+		 
+			</TableRow>
+			<TableRow >
+	 		 		 <EditText android:id="@+id/resite_user_pwd"  android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginTop="15dp"
+						android:layout_width="fill_parent" android:layout_height="40dp"
+						 android:paddingLeft="10dp"  android:gravity="center_vertical"
+						 android:textColor="#000000" android:textStyle="bold" android:password="true"
+						 android:textSize="20sp" android:background="@drawable/shape_corners"
+					/>
+			  
+			</TableRow>
+			<TableRow>
+  			    <TextView android:layout_width="fill_parent"  android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginTop="15dp"
+						android:layout_height="fill_parent" android:text="请确认密码"
+					     android:textColor="#686868" android:gravity="center_vertical"
+						android:textSize="14sp"   />
+		 
+			</TableRow>
+			<TableRow >
+	 		 		 <EditText android:id="@+id/resite_confirm_pwd"  android:layout_margin="15dp"
+						android:layout_width="fill_parent" android:layout_height="40dp"
+						 android:paddingLeft="10dp"  android:gravity="center_vertical"
+						 android:textColor="#000000" android:textStyle="bold" android:password="true"
+						 android:textSize="20sp" android:background="@drawable/shape_corners"
+					/>
+			  
+			</TableRow>
+			<TableRow>
+				<Button android:layout_margin="15dp" android:id="@+id/resite_submit"
+					android:layout_width="fill_parent" android:layout_height="50dp"
+					android:layout_marginTop="10dp" android:textSize="20sp" 
+					android:background="@drawable/shape_corner_button" android:text="注册"
+					android:textColor="#ffffff" />
+			</TableRow>
+		</TableLayout>
+	</RelativeLayout>
+</RelativeLayout>

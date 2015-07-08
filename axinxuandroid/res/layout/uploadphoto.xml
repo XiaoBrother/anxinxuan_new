@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:background="@color/page_bg_color" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/uploadphoto_topview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" anxinxuan:title="选择图片"
+		anxinxuan:lefttext="取消" anxinxuan:righttext="上传" />
+	<LinearLayout android:layout_width="fill_parent"
+	    
+		android:layout_height="wrap_content" android:background="@drawable/shape_corners"
+		android:paddingLeft="5dp" android:layout_margin="15dp">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="50dp" android:text="标签：" android:textSize="18sp"
+			android:textColor="#444" />
+		<EditText android:layout_width="fill_parent" android:textColorHint="#ddd"
+			android:layout_height="50dp" android:hint="输入图片标签"
+			android:background="@null" android:id="@+id/uploadphoto_label" />
+	</LinearLayout>
+	<GridView android:id="@+id/uploadphoto_gridview"
+		android:layout_marginLeft="15dp" android:layout_marginRight="15dp"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center" android:numColumns="4"
+		android:verticalSpacing="3dip"  
+		android:layout_marginTop="3dp" android:cacheColorHint="#00000000"
+		android:scrollbars="none" 
+		android:listSelector="@android:color/transparent" />
+
+</LinearLayout>

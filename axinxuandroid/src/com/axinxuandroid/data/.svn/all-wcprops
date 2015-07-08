@@ -1,0 +1,227 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data
+END
+SystemSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/SystemSet.java
+END
+Comment.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Comment.java
+END
+Intelligence.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Intelligence.java
+END
+VilleagePhoto.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/VilleagePhoto.java
+END
+LoadImageInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/LoadImageInterface.java
+END
+PhotoAibum.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/PhotoAibum.java
+END
+PhotoItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/PhotoItem.java
+END
+Category.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Category.java
+END
+UserFavorite.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/UserFavorite.java
+END
+User.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/User.java
+END
+VilleageBanner.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/VilleageBanner.java
+END
+UploadImg.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/UploadImg.java
+END
+BatchLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/BatchLabel.java
+END
+VideoInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/VideoInfo.java
+END
+SystemLabel.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/SystemLabel.java
+END
+Version.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Version.java
+END
+SystemNotice.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/SystemNotice.java
+END
+RecordResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/RecordResource.java
+END
+Advocate.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Advocate.java
+END
+UserVilleage.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/UserVilleage.java
+END
+TimeOrderTool.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/TimeOrderTool.java
+END
+Villeage.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Villeage.java
+END
+MoreWindowDataInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/MoreWindowDataInterface.java
+END
+TimeOrderInterface.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/TimeOrderInterface.java
+END
+Template.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Template.java
+END
+ProustItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/ProustItem.java
+END
+LeadViewInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/LeadViewInfo.java
+END
+UserRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/UserRecord.java
+END
+Record.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Record.java
+END
+UserVisitHistory.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/UserVisitHistory.java
+END
+Batch.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Batch.java
+END
+Variety.java
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Variety.java
+END
+SystemLog.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/SystemLog.java
+END
+CategoryProcedure.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/CategoryProcedure.java
+END
+NetUpdateRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/NetUpdateRecord.java
+END
+Proust.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/Proust.java
+END
+OAuthAccount.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/anxinxuan/!svn/ver/168/2/src/com/axinxuandroid/data/OAuthAccount.java
+END

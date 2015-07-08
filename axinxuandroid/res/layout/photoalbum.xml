@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity" 
+	android:background="@color/page_bg_color"  > 
+    <com.axinxuandroid.activity.view.CommonTopView
+	     android:id="@+id/photoalbum_topview"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         anxinxuan:title="相册"
+         anxinxuan:righttext="取消" 
+       />
+	<GridView android:id="@+id/photoalbum_gridview"
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:gravity="center"  android:layout_marginTop="15dp"
+		android:layout_marginLeft="10dp" android:layout_marginRight="10dp" 
+		android:numColumns="4" android:verticalSpacing="6dp"  android:horizontalSpacing="3dp"
+		  android:layout_below="@id/photoalbum_topview"
+		android:cacheColorHint="#00000000" android:scrollbars="none"
+		   android:layout_centerHorizontal="true"
+		android:listSelector="@android:color/transparent"
+ 		/>
+		
+	<ListView android:id="@+id/photoalbum_listview" android:layout_marginTop="15dp"
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:dividerHeight="0.5dp"
+		android:divider="#ddd" android:fadingEdge="vertical" android:layout_below="@id/photoalbum_gridview"
+		android:cacheColorHint="#00000000" android:gravity="center">
+	</ListView>
+  <RelativeLayout 
+		android:layout_width="fill_parent" android:layout_height="80dp"
+		android:layout_alignParentBottom="true"  
+		android:gravity="center_vertical">
+		 <com.axinxuandroid.activity.view.PhotoBottomView
+		  android:id="@+id/photoalbum_bottomview"
+		  android:layout_width="fill_parent" android:layout_height="fill_parent"
+		  />
+   	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/anxinxuan/!svn/ver/168/2/src/com/gauss/writer/speex
+END
+SpeexWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/anxinxuan/!svn/ver/168/2/src/com/gauss/writer/speex/SpeexWriter.java
+END
+OggCrc.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/anxinxuan/!svn/ver/168/2/src/com/gauss/writer/speex/OggCrc.java
+END
+AudioFileWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/anxinxuan/!svn/ver/168/2/src/com/gauss/writer/speex/AudioFileWriter.java
+END
+OggSpeexWriter.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/anxinxuan/!svn/ver/168/2/src/com/gauss/writer/speex/OggSpeexWriter.java
+END
+SpeexWriteClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/anxinxuan/!svn/ver/168/2/src/com/gauss/writer/speex/SpeexWriteClient.java
+END

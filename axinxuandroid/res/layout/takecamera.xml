@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+     android:layout_width="match_parent"  
+      android:layout_height="match_parent" 
+      android:orientation="vertical" 
+     >  
+  
+    
+    <com.axinxuandroid.activity.view.CameraView
+        android:id="@+id/takecamera_cameraview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    />  
+     
+    
+     <RelativeLayout android:layout_width="fill_parent" 
+		android:layout_height="50dp" android:layout_alignParentBottom="true">
+		<TableLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:stretchColumns="*">
+			<TableRow>
+			  <Button  
+		           android:background="@null"
+		           android:id="@+id/takecamera_take"
+		           android:layout_width="80dp"
+		           android:layout_height="50dp"
+		           android:textSize="20sp" android:textColor="#ffffff"
+		           android:text="拍摄" /> 
+		       <Button  
+		           android:background="@null"
+		           android:id="@+id/takecamera_save"
+		           android:layout_width="80dp"
+		           android:layout_height="50dp"
+		           android:textSize="20sp" android:textColor="#ffffff"
+		           android:text="保存" /> 
+			</TableRow>
+		</TableLayout>
+
+	</RelativeLayout>
+</RelativeLayout> 

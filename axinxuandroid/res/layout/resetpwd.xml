@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="#fff"
+	 >
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		anxinxuan:righttext="保存" anxinxuan:lefttext="返回"
+		android:id="@+id/resetpwd_topview" anxinxuan:title="重设密码" />
+ 	<LinearLayout android:layout_width="fill_parent"
+ 	    android:layout_margin="10dp"
+		android:layout_height="wrap_content" android:background="@drawable/shape_corners"
+		android:paddingLeft="5dp" android:layout_marginTop="5dp">
+		<TextView android:layout_width="wrap_content" 
+			android:layout_height="50dp" android:text="输入密码：" android:textSize="18sp"
+			android:textColor="#83593a" />
+		<EditText android:layout_width="fill_parent" android:password="true"
+			android:layout_height="50dp" android:hint="输入密码"
+			android:background="@null" android:id="@+id/resetpwd_pwd" />
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_margin="10dp"
+		android:layout_height="wrap_content" android:background="@drawable/shape_corners"
+		android:paddingLeft="5dp" android:layout_marginTop="5dp">
+		<TextView android:layout_width="wrap_content" 
+			android:layout_height="50dp" android:text="确认密码：" android:textSize="18sp"
+			android:textColor="#83593a" />
+		<EditText android:layout_width="fill_parent" android:password="true"
+			android:layout_height="50dp" android:hint="确认密码"
+			android:background="@null" android:id="@+id/resetpwd_repwd" />
+	</LinearLayout>
+</LinearLayout>

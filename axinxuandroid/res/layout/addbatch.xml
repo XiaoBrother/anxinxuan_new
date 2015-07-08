@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:background="@color/page_bg_color">
+
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/addbatch_topview" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" anxinxuan:title="新增批次"
+		anxinxuan:lefttext="取消" anxinxuan:righttext="保存" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+		android:layout_below="@id/addbatch_topview" android:orientation="vertical"
+		android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+		<RelativeLayout android:id="@+id/addbatch_selectvilleage"
+			android:layout_width="fill_parent" android:layout_height="60dp"
+			android:layout_marginTop="10dp" android:gravity="center_vertical"
+			android:clickable="true" android:background="@drawable/shape_corners">
+			<TextView android:id="@+id/addbatch_villeagename"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:textSize="20sp" android:textColor="#262223" android:gravity="center_vertical"
+				android:background="#ffffff"   android:paddingLeft="15dp" android:text="请先选择农场">
+			</TextView>
+			<TextView android:id="@+id/addbatch_villeageid"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:visibility="gone">
+			</TextView>
+			<ImageView  style="@style/setting_arrow_img"
+ 				android:layout_marginRight="5dp"   />
+		</RelativeLayout>
+
+		<RelativeLayout android:id="@+id/addbatch_selectvariety"
+			android:layout_width="fill_parent" android:layout_height="60dp"
+			android:layout_marginTop="10dp" android:gravity="center_vertical"
+			android:clickable="true" android:background="@drawable/shape_corners">
+			<TextView android:id="@+id/addbatch_varietyname"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:textSize="20sp" android:textColor="#262223" android:textColorHint="#262223"
+				android:background="#ffffff"   android:gravity="center_vertical" android:hint="选择品种" android:paddingLeft="15dp">
+			</TextView>
+			<ImageView style="@style/setting_arrow_img"
+				android:layout_marginRight="5dp"   />
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="60dp"
+			android:layout_width="fill_parent" android:layout_marginTop="10dp"
+			android:background="@drawable/shape_corners" android:gravity="center">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:textSize="20sp"
+				  android:textColor="#8abc1d"   android:gravity="center_vertical"
+				android:background="#ffffff" android:text="批次权限"
+				android:paddingLeft="15dp" />
+			<com.axinxuandroid.activity.view.SlipButton
+				android:id="@+id/addbatch_status" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" anxinxuan:leftmessage="隐藏"
+				anxinxuan:rightmessage="显示" android:layout_alignParentRight="true" />
+		</RelativeLayout>
+		<RelativeLayout android:layout_height="60dp"
+			android:layout_width="fill_parent" android:layout_marginTop="10dp"
+			android:gravity="center" android:background="@drawable/shape_corners">
+			<TextView android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:textSize="20sp"
+				android:textColor="#8abc1d" android:background="#ffffff"   android:gravity="center_vertical"
+				  android:text="批次状态" android:paddingLeft="15dp" />
+			<com.axinxuandroid.activity.view.SlipButton
+				android:id="@+id/addbatch_stage" android:layout_height="wrap_content"
+				android:layout_width="wrap_content" anxinxuan:leftmessage="生产"
+				anxinxuan:rightmessage="销售" android:layout_alignParentRight="true" />
+		</RelativeLayout>
+		<!--
+			<LinearLayout android:layout_height="wrap_content"
+			android:layout_width="fill_parent" android:layout_marginTop="10dp" >
+			<Button android:id="@+id/addbatch_save"
+			android:layout_width="fill_parent" android:layout_height="50dp"
+			android:text="保 存" android:textSize="20sp"
+			android:textColor="#ffffff"
+			android:background="@drawable/btn_style_login" /> </LinearLayout>
+		-->
+	</LinearLayout>
+
+
+
+</RelativeLayout>

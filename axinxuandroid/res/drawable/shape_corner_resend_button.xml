@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <shape android:shape="rectangle"  
+    xmlns:android="http://schemas.android.com/apk/res/android">  
+    <solid android:color="#FFFFFF" />  <!-- 背景的填充颜色 -->   
+    <stroke android:width="0.5dip"  
+        android:color="#C4C4C7"  
+        android:dashWidth="1.0dip"  
+        android:dashGap="0.0dip" />  <!-- 描边，width是边得宽度，color是颜色   -->
+     <padding android:left="3dip"  
+        android:top="3dip" android:right="3dip"  
+        android:bottom="3dip" /> 
+    <corners android:radius="6dip" />  <!-- 边角圆弧的半径 -->   
+</shape>  
+ 

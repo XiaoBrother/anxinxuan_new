@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="match_parent"
+	android:background="@color/page_bg_color" android:orientation="vertical">
+	<com.axinxuandroid.activity.view.CommonTopView
+		android:layout_width="fill_parent" android:layout_height="wrap_content"
+		android:id="@+id/selectvariety_topview" anxinxuan:title="选择品种"
+		anxinxuan:leftimgsrc="@drawable/icon_back"
+		anxinxuan:rightimgsrc="@drawable/icon_add">
+
+	</com.axinxuandroid.activity.view.CommonTopView>
+
+  	
+	<FrameLayout android:layout_width="fill_parent" android:layout_marginTop="20dp"
+	    android:layout_marginLeft="15dp" android:layout_marginRight="15dp" 
+		android:layout_height="58dp" >
+		<ImageView   android:layout_width="fill_parent"  android:layout_height="fill_parent"
+				   android:background="@drawable/edittext_bg"
+				 ></ImageView>
+		<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"  >
+		<EditText android:id="@+id/selectvariety_seachtext"
+			android:paddingLeft="12.0sp"  android:background="@null"
+			android:saveEnabled="true" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:layout_marginRight="5dp"
+			android:layout_alignParentTop="true" />
+
+		<ImageButton  android:layout_alignParentRight="true"
+			android:background="@drawable/serach_right" android:id="@+id/selectvariety_seachbtn"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" />
+       </RelativeLayout>
+	</FrameLayout>
+	
+	
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="fill_parent" android:layout_marginBottom="3dp"
+		android:layout_marginTop="15dp" android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp">
+		<ListView android:id="@+id/selectvariety_list"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:divider="#aa9E9C9B" android:dividerHeight="0.5dp"
+			android:fadingEdge="none" android:cacheColorHint="#00000000"
+			android:background="@drawable/shape_corners" android:visibility="gone">
+		</ListView>
+	</LinearLayout>
+</LinearLayout>

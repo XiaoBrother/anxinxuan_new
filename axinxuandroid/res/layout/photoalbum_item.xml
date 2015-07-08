@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="60dp"
+	android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:background="#fff">
+	<FrameLayout android:layout_width="65dp" android:layout_alignParentLeft="true" 
+		android:layout_height="65dp">
+ 		<ImageView android:id="@+id/photoalbum_item_image"
+			android:layout_width="fill_parent" android:layout_height="fill_parent"
+			android:scaleType="fitXY" />
+	     <ImageView android:background="@drawable/yuanjiao"
+				android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	</FrameLayout>
+	<TextView android:id="@+id/photoalbum_item_name"
+		android:layout_marginLeft="80dp" android:textSize="18sp"
+		android:textColor="#8abc1d" android:layout_width="wrap_content"
+		android:layout_height="60dp" android:gravity="center_vertical"
+		  />
+	<ImageView android:layout_width="wrap_content" android:src="@drawable/gd"
+		android:background="@null" android:layout_height="60dp"
+		android:scaleType="centerInside" android:layout_alignParentRight="true" />
+</RelativeLayout>

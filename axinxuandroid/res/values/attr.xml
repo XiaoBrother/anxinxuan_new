@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ <resources>
+    <declare-styleable name="commontop">   
+        <attr name="title" format="string" /> 
+        <attr name="subtitle" format="string" />  
+        <attr name="lefttext" format="string" />  
+        <attr name="righttext" format="string" />     
+        <attr name="leftimgsrc" format="reference"/>   
+        <attr name="rightimgsrc" format="reference"/>   
+     </declare-styleable>  
+     
+     <declare-styleable name="draglistview">   
+        <attr name="lefthiddenlen" format="integer" />
+        <attr name="righthiddenlen" format="integer" />   
+      </declare-styleable>  
+     <declare-styleable name="slipbutton">   
+        <attr name="leftmessage" format="string" /> 
+        <attr name="rightmessage" format="string" />   
+     </declare-styleable>  
+   <!--属性的类型可设置为： string , integer , dimension , reference , color , enum......
+                 如果该属性可同时传两种不同的属性，则可以用“|”分割开即可
+        reference：参考指定Theme中资源ID(="@string/name")
+        color：颜色(="#ff0000")
+        boolean：布尔值(="false")
+        dimension：尺寸值(="100dip")
+        float：浮点型(="0.3")
+        integer：整型
+        string：字符串
+        fraction：百分数(="200%")
+        enum：枚举
+        定义：
+         <declare-styleable name="My">
+        <attr name="language">
+            <enum name="English" value="1"/>
+        </attr>
+       </declare-styleable>
+        使用：
+         <Button zkx:language="English"/> 
+        
+        flag：位或运算
+        
+	           定义：
+	     <declare-styleable name="My">
+	        <attr name="windowSoftInputMode">
+	    	<flag name="stateUnspecified" value="1" />
+	    	<flag name = "adjustNothing" value = "0x30" />
+	        </attr>
+	    </declare-styleable> 
+
+	           使用：
+	     <activity android:windowSoftInputMode="stateUnspecified | adjustNothing"> 
+
+        
+    -->
+    
+     <declare-styleable name="PullToRefresh">
+        <attr name="adapterViewBackground" format="reference|color" />
+        <attr name="headerBackground" format="reference|color" />
+        <attr name="headerTextColor" format="color" />
+        <attr name="mode">
+            <flag name="pullDownFromTop" value="0x1" />
+            <flag name="pullUpFromBottom" value="0x2" />
+            <flag name="both" value="0x3" />
+        </attr>
+    </declare-styleable>
+    
+    
+    <declare-styleable name="XRTextView">
+        <attr name="xrTextSize" format="integer" />
+        <attr name="xrTextColor" format="color" />
+        <attr name="xrPaddingLeft" format="integer" />
+        <attr name="xrPaddingRight" format="integer" />
+         <attr name="xrLineSpacing" format="float" />
+    </declare-styleable>
+    
+    
+    <declare-styleable name="ImageGallery">
+         <attr name="indexMode">
+            <flag name="up" value="0x1" />
+            <flag name="down" value="0x2" />
+         </attr>
+    </declare-styleable>
+ </resources>
