@@ -1,23 +1,13 @@
 package com.axinxuandroid.service;
 
  
-import java.util.ArrayList;
- import java.util.List;
-
-import org.json.JSONArray;
-import org.json.JSONObject;
- 
+import java.util.List;
 
 import com.axinxuandroid.data.Batch;
-import com.axinxuandroid.data.BatchLabel;
 import com.axinxuandroid.data.Record;
 import com.axinxuandroid.db.BatchDB;
-import com.axinxuandroid.db.BatchLabelDB;
 import com.axinxuandroid.db.SystemDB;
- 
 import com.axinxuandroid.sys.gloable.Gloable;
-import com.ncpzs.util.HttpUtil;
-import com.ncpzs.util.LogUtil;
 
 public class BatchService {
 	private BatchDB batchDB;
@@ -90,6 +80,9 @@ public class BatchService {
     }
     public void deleteByVilleageId(int villeageid){
     	batchDB.deleteByVilleageId(villeageid);
+    }
+    public List<Batch> getByVilleageidVarietyID(int vid,int variety_id,int stage) { 
+       	return batchDB.selectbyVilleageIdVarietyId(vid,variety_id,stage);
     }
     public List<Batch> getByVilleageid(int vid,int stage) { 
        	return batchDB.selectbyVilleageId(vid,stage);

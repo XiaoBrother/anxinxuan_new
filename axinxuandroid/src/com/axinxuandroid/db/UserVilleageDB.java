@@ -105,6 +105,7 @@ public class UserVilleageDB extends SystemDB {
  				uvilleage.setVilleage_desc(cursor.getString(11));
  				uvilleage.setLat(cursor.getDouble(12));
  				uvilleage.setLng(cursor.getDouble(13));
+ 				uvilleage.setUser_id(cursor.getInt(14));
   				reds.add(uvilleage);
 				cursor.moveToNext();
 			}
@@ -184,6 +185,7 @@ public class UserVilleageDB extends SystemDB {
 			uvilleage.setVilleage_desc(cursor.getString(11));
 			uvilleage.setLat(cursor.getDouble(12));
 			uvilleage.setLng(cursor.getDouble(13));
+			uvilleage.setUser_id(cursor.getInt(14));
     	} 
  		cursor.close();
 		db.close();

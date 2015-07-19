@@ -17,12 +17,14 @@ public class Villeage implements MoreWindowDataInterface{
 	private String villeage_desc;
 	private double lat;
 	private double lng;
+ 	private int user_id; //创建者ID
 	private int isdel;//是否已删除
 	private String lastoptime;//最后操作时间
  	private List<Variety> varieties;
 	private List<User> users;
 	private List<Intelligence> intelligences;
 	private List<VilleageBanner> banners;
+	
 	public long getId() {
 		return id;
 	}
@@ -190,6 +192,14 @@ public class Villeage implements MoreWindowDataInterface{
 	@Override
 	public String getShowText() {
  		return villeage_name;
+	}
+
+	public int getUser_id() {
+		return user_id;
+	}
+
+	public void setUser_id(int user_id) {
+		this.user_id = user_id;
 	}
 
 }

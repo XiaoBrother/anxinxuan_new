@@ -73,6 +73,49 @@ public class BatchDB extends SystemDB {
 		batch.setId((int)row);
 		return row;
 	}
+	public  List<Batch>  selectbyVilleageIdVarietyId(int villeage_id,int variety_id,int stage) {
+		SQLiteDatabase db = this.getReadableDatabase();
+ 		StringBuffer sb = new StringBuffer();
+		String select = "select id,batch_id,variety_id,villeage_id,producecount,variety,code,buylink,status,stage,consumercount,create_time,order_date,order_index,categoryid,lastoptime,userid";
+		String from = " from "+TABLE_NAME+" dat ";
+		String where = " where   dat.villeage_id = ? and dat.variety_id =?  and dat.stage=? and isdel="+DATA_NOT_DELETE+" order by lastoptime desc";
+		sb.append(select);
+		sb.append(from);
+		sb.append(where);
+   		Cursor cursor = db.rawQuery(sb.toString(), new String[] {villeage_id+"",variety_id+"",stage+""});
+		int number = cursor.getCount();
+ 		List<Batch> reds=null;
+		if (number > 0) {
+			reds=new ArrayList<Batch>();
+			Batch red=null;
+			cursor.moveToFirst();
+ 			while (cursor.getPosition() != number) {
+ 				red=new Batch();
+ 				red.setId(cursor.getInt(0));
+  				red.setBatch_id(cursor.getInt(1));
+  				red.setVariety_id(cursor.getLong(2));
+  				red.setVilleage_id(cursor.getInt(3));
+  				red.setProducecount(cursor.getInt(4));
+  				red.setVariety(cursor.getString(5));
+  				red.setCode(cursor.getString(6));
+  				red.setBuylink(cursor.getString(7));
+  				red.setStatus(cursor.getInt(8));
+  				red.setStage(cursor.getInt(9));
+  				red.setConsumercount(cursor.getInt(10));
+  				red.setCreate_time(cursor.getString(11));
+  				red.setOrder_date(cursor.getLong(12));
+  				red.setOrder_index(cursor.getInt(13));
+  				red.setCategoryid(cursor.getInt(14));
+  				red.setLastoptime(cursor.getString(15));
+  				red.setUserid(cursor.getInt(16));
+ 				reds.add(red);
+				cursor.moveToNext();
+			}
+ 		}
+		cursor.close();
+		db.close();
+		return reds;
+	}
 
 	public  List<Batch>  selectbyVilleageId(int villeage_id,int stage) {
 		SQLiteDatabase db = this.getReadableDatabase();

@@ -21,7 +21,7 @@
 	<uses-feature android:name="android.hardware.camera" />
 	<uses-feature android:name="android.hardware.camera.autofocus" />
 
-	<application android:debuggable="true" android:icon="@drawable/icon"  
+	<application  android:icon="@drawable/icon"  
 		android:label="@string/app_name" android:name="com.axinxuandroid.sys.gloable.AxxApplication">
 		<activity android:name=".Appstart" android:label="@string/app_name"
 			android:theme="@android:style/Theme.NoTitleBar">
@@ -145,6 +145,12 @@
 	   <activity android:name=".UserCommentActivity" android:label="用户评论"  
 			android:theme="@android:style/Theme.NoTitleBar" /> 
 	   <activity android:name=".ValidSecurityCodeResultActivity" android:label="防伪码校验"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+	   <activity android:name=".AntiFakeActivity" android:label="防伪码设置"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+			   <activity android:name=".AntifakePublisBbatchActivity" android:label="防伪码生成"  
+			android:theme="@android:style/Theme.NoTitleBar" /> 
+			   <activity android:name=".AntifakeBatchListActivity" android:label="防伪码列表"  
 			android:theme="@android:style/Theme.NoTitleBar" /> 
 	  <!--  <activity android:name=".ShareInfoActivity" android:label="分享"  
 	   android:configChanges="keyboardHidden|orientation"  android:screenOrientation="portrait"

@@ -30,7 +30,7 @@ public abstract class SystemDB extends SQLiteOpenHelper {
      * 那么SQLiteOpenHelper#onUpgrade()方法就会被调用，我们的升级应该在该方法中完成。
 
      */
-	public final static int DATABASE_VERSION = 49; 
+	public final static int DATABASE_VERSION = 52; 
 	private Context context;
  	public SystemDB(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -62,7 +62,7 @@ public abstract class SystemDB extends SQLiteOpenHelper {
         db.execSQL(sql);
         //T_android_Villeage 农场
         sql = "CREATE TABLE IF NOT EXISTS T_android_Villeage (id INTEGER primary key autoincrement, "
-		+   "villeage_id INTEGER, villeage_name text, collect_code text, manager_name text, tele text, address text,bulid_time text,scale text,type INTEGER,manage_scope text,villeage_desc text,lat INTEGER,lng INTEGER,isdel INTEGER,lastoptime text)";
+		+   "villeage_id INTEGER, villeage_name text, collect_code text, manager_name text, tele text, address text,bulid_time text,scale text,type INTEGER,manage_scope text,villeage_desc text,lat text,lng text,user_id INTEGER,isdel INTEGER,lastoptime text)";
         db.execSQL(sql);
         //T_android_User_Villeage 用户农场
         sql = "CREATE TABLE IF NOT EXISTS T_android_User_Villeage (id INTEGER primary key autoincrement, "
@@ -147,6 +147,12 @@ public abstract class SystemDB extends SQLiteOpenHelper {
         sql = "CREATE TABLE IF NOT EXISTS T_android_Advocate (id INTEGER primary key autoincrement, "
 		+   "userid INTEGER,recordid INTEGER,isdel INTEGER,lastoptime text)";
         db.execSQL(sql);
+        
+        
+        //T_android_SecurityCodeBatch 用户防伪批次
+        sql = "CREATE TABLE IF NOT EXISTS T_android_SecurityCodeBatch (id INTEGER primary key autoincrement, "
+		+   "user_id INTEGER,batchid INTEGER, variety_id INTEGER, status INTEGER,batchtime text,timebatch text,snum text,endnum text,tcount INTEGER,bdesc text,createtime text, isdel INTEGER,lastoptime text)";
+        db.execSQL(sql);
  	}
  	private void dropAllTable(SQLiteDatabase db){
  		String sql = "DROP TABLE IF EXISTS T_android_Record_Resource " ;
@@ -200,6 +206,8 @@ public abstract class SystemDB extends SQLiteOpenHelper {
 		sql = "DROP TABLE IF EXISTS T_android_System_Label " ;
 		db.execSQL(sql);
 		sql = "DROP TABLE IF EXISTS T_android_Advocate " ;
+		db.execSQL(sql);
+		sql = "DROP TABLE IF EXISTS T_android_SecurityCodeBatch " ;
 		db.execSQL(sql);
 		 
  	}

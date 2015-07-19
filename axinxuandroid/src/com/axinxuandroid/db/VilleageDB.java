@@ -35,6 +35,7 @@ public class VilleageDB extends SystemDB {
 	private final static String LASTOPTIME = "lastoptime"; 
 	private final static String LAT = "lat"; 
 	private final static String LNG = "lng"; 
+	private final static String USERID = "user_id"; 
 	public VilleageDB(Context context) {
 		super(context);
 	}
@@ -60,6 +61,7 @@ public class VilleageDB extends SystemDB {
 		cv.put(LASTOPTIME, uservilleage.getLastoptime());
 		cv.put(LAT, uservilleage.getLat());
 		cv.put(LNG, uservilleage.getLng());
+		cv.put(USERID, uservilleage.getUser_id());
     	long row = db.insert(TABLE_NAME, null, cv);
 		db.close();
 		return row;
@@ -73,6 +75,7 @@ public class VilleageDB extends SystemDB {
 		String[] whereValue = { String.valueOf(villeage.getVilleage_id())};
 		ContentValues cv = new ContentValues();
 		cv.put(VILLEAGEID, villeage.getVilleage_id());
+ 		cv.put(USERID, villeage.getUser_id());
 		cv.put(VILLEAGE_NAME, villeage.getVilleage_name());
 		cv.put(COLLECT_CODE, villeage.getCollect_code());
 		cv.put(MANAGER_NAME, villeage.getManager_name());
@@ -157,11 +160,48 @@ public class VilleageDB extends SystemDB {
 			uvilleage.setVilleage_desc(cursor.getString(11));
   			uvilleage.setLat(cursor.getDouble(12));
 			uvilleage.setLng(cursor.getDouble(13));
+			uvilleage.setUser_id(cursor.getInt(14));
     	} 
    		//LogUtil.logInfo(getClass(), cursor.getCount()+"");
 		cursor.close();
 		db.close();
  		return uvilleage;
+	}
+	
+	public  Villeage queryUserCreateFarm(int user_id) {
+		SQLiteDatabase db = this.getReadableDatabase();
+		StringBuffer sb = new StringBuffer();
+		String select = "select * ";
+		String from = " from "+TABLE_NAME+" dat";
+		String where = " where    dat.user_id= ? and isdel="+DATA_NOT_DELETE+"";
+		sb.append(select);
+		sb.append(from);
+		sb.append(where);
+		Cursor cursor = db.rawQuery(sb.toString(), new String[] { user_id+""});
+		Villeage uvilleage=null;
+		if (cursor.getCount() > 0) {
+			cursor.moveToFirst();
+			uvilleage=new Villeage();
+			uvilleage.setId(cursor.getLong(0));
+			uvilleage.setVilleage_id(cursor.getInt(1));
+			uvilleage.setVilleage_name(cursor.getString(2));
+			uvilleage.setCollect_code(cursor.getString(3));
+			uvilleage.setManager_name(cursor.getString(4));
+			uvilleage.setTele(cursor.getString(5));
+			uvilleage.setAddress(cursor.getString(6));
+			uvilleage.setBulid_time(cursor.getString(7));
+			uvilleage.setScale(cursor.getString(8));
+			uvilleage.setType(cursor.getInt(9));
+			uvilleage.setManage_scope(cursor.getString(10));
+			uvilleage.setVilleage_desc(cursor.getString(11));
+			uvilleage.setLat(cursor.getDouble(12));
+			uvilleage.setLng(cursor.getDouble(13));
+			uvilleage.setUser_id(cursor.getInt(14));
+		} 
+		//LogUtil.logInfo(getClass(), cursor.getCount()+"");
+		cursor.close();
+		db.close();
+		return uvilleage;
 	}
 	@Override
 	public String getDBName() {

@@ -1,28 +1,30 @@
 package com.axinxuandroid.activity;
 
 
+import java.util.List;
 import java.util.Map;
 
-import com.axinxuandroid.activity.handler.ConfirmDialogHandlerMethod;
 import com.axinxuandroid.activity.handler.MessageDialogHandlerMethod;
 import com.axinxuandroid.activity.handler.NcpzsHandler;
 import com.axinxuandroid.activity.handler.OnHandlerFinishListener;
 import com.axinxuandroid.activity.handler.ProcessDialogHandlerMethod;
+import com.axinxuandroid.activity.net.LoadUserVilleageThread;
 import com.axinxuandroid.activity.net.NetFinishListener;
 import com.axinxuandroid.activity.net.NetResult;
 import com.axinxuandroid.activity.net.UserLoginThread;
 import com.axinxuandroid.data.User;
+import com.axinxuandroid.data.UserVilleage;
 import com.axinxuandroid.oauth.OAuthConstant;
 import com.axinxuandroid.oauth.OAuthResult;
 import com.axinxuandroid.oauth.QQWeiBoOAuthListener;
 import com.axinxuandroid.oauth.SinaOAuthListener;
 import com.axinxuandroid.service.SharedPreferenceService;
 import com.axinxuandroid.service.UserService;
+import com.axinxuandroid.service.UserVilleageService;
+import com.axinxuandroid.service.VilleageService;
 import com.axinxuandroid.sys.gloable.Gloable;
 import com.axinxuandroid.sys.gloable.Session;
 import com.axinxuandroid.sys.gloable.SessionAttribute;
-import com.google.zxing.common.GlobalHistogramBinarizer;
-import com.ncpzs.util.LogUtil;
 import com.sina.weibo.sdk.auth.AuthInfo;
 import com.sina.weibo.sdk.auth.sso.SsoHandler;
 import com.taobao.top.android.TopAndroidClient;
@@ -30,16 +32,10 @@ import com.tencent.mm.sdk.modelmsg.SendAuth;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 import com.tencent.weibo.sdk.android.component.sso.AuthHelper;
- 
-import com.xmpp.client.connect.ServerConnection;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.util.Log;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -54,6 +50,8 @@ public class LoginActivity extends NcpZsActivity {
     private Button registebtn;
     private ProgressDialog processDialog; 
     private UserService userservice;
+	private UserVilleageService uservilleageservice;
+	private VilleageService villeageservice;
     private ImageButton sinalogin,taobaologin,weixinlogin;
     //新浪授权
     /** 微博API接口类，提供登陆等功能  */
@@ -186,6 +184,7 @@ public class LoginActivity extends NcpZsActivity {
  		    		//保存或更新数据库
  		    		userservice.saveOrUpdate((User)data.returnData);
  		    		SharedPreferenceService.saveLastLoginUser((User)data.returnData);//记录最后一次登录信息
+ 		    		updateUserVilleage();
  		    		//Session.getInstance().setAttribute(SessionAttribute.SESSION_USER, (User)rdata.get(UserLoginThread.RETURNDATA));//将用户信息存放到session
  					startActivity(resultIntent);
   				}else{
@@ -196,6 +195,36 @@ public class LoginActivity extends NcpZsActivity {
     	th.start();
     }
     
+	/**
+	 * 更新用户农场信息
+	 */
+	private void updateUserVilleage(){
+		final User user=userservice.getLastLoginUser();
+		if(user!=null){
+			LoadUserVilleageThread uvith=new LoadUserVilleageThread(user.getUser_id());
+			uvith.setLiserner(new NetFinishListener() {
+ 				@Override
+				public void onfinish(NetResult data) {
+  						if (data.result == NetResult.RESULT_OF_SUCCESS) {
+ 							List<UserVilleage> tuservils = (List<UserVilleage>) data.returnData;
+ 							uservilleageservice=new UserVilleageService();
+ 							villeageservice=new VilleageService();
+ 							
+ 							if (tuservils != null) {
+ 								for (UserVilleage vil : tuservils) {
+ 										uservilleageservice.saveOrUpdate(vil);
+ 									if(vil.getVilleage()!=null)
+ 									   villeageservice.saveOrUpdate(vil.getVilleage());
+ 								}
+ 							  }  
+ 						} 
+ 				}
+			});
+			uvith.start();
+		}else{
+		}
+		
+	}
      
      /**
       * 用户注册

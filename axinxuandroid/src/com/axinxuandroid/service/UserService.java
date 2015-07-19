@@ -73,6 +73,11 @@ public class UserService {
 	  return usertype;
   }
   
+  public Villeage getUserCreateVilleage(int user_id){
+ 	  Villeage uvil=villeageservice.queryUserCreateFarm(user_id);
+	  return uvil;
+  }
+  
   public void saveOrUpdate(User user){
 	  if(user==null) return ;
 	  User exist=this.selectbyUserid(user.getUser_id());

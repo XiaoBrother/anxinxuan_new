@@ -6,9 +6,7 @@ import java.util.Map;
 
 import com.anxinxuandroid.constant.AppConstant;
 import com.axinxuandroid.activity.R;
-import com.axinxuandroid.activity.RecordDemoActivity;
 import com.axinxuandroid.activity.SelectTypeActivity;
-import com.axinxuandroid.activity.TimelineActivity;
 import com.axinxuandroid.activity.handler.ConfirmDialogHandlerMethod;
 import com.axinxuandroid.activity.handler.MessageDialogHandlerMethod;
 import com.axinxuandroid.activity.handler.NcpzsHandler;
@@ -18,62 +16,44 @@ import com.axinxuandroid.activity.net.DeleteBatchThread;
 import com.axinxuandroid.activity.net.LoadVilleageBatchThread;
 import com.axinxuandroid.activity.net.NetFinishListener;
 import com.axinxuandroid.activity.net.NetResult;
-import com.axinxuandroid.activity.net.UpdateBatchStageThread;
 import com.axinxuandroid.activity.net.UpdateBatchStatusThread;
 import com.axinxuandroid.activity.view.DragListView.DragListener;
 import com.axinxuandroid.data.Batch;
 import com.axinxuandroid.data.NetUpdateRecord;
-import com.axinxuandroid.data.TimeOrderInterface;
+import com.axinxuandroid.data.NetUpdateRecord.NetUpdateRecordTime;
 import com.axinxuandroid.data.TimeOrderTool;
 import com.axinxuandroid.data.User;
 import com.axinxuandroid.data.UserVilleage;
-import com.axinxuandroid.data.Villeage;
-import com.axinxuandroid.data.NetUpdateRecord.NetUpdateRecordStatus;
-import com.axinxuandroid.data.NetUpdateRecord.NetUpdateRecordTime;
 import com.axinxuandroid.service.BatchService;
 import com.axinxuandroid.service.NetUpdateRecordService;
 import com.axinxuandroid.service.UserService;
 import com.axinxuandroid.service.UserVilleageService;
 import com.axinxuandroid.sys.gloable.Gloable;
-import com.axinxuandroid.sys.gloable.Session;
-import com.axinxuandroid.sys.gloable.SessionAttribute;
-import com.ncpzs.util.BitmapUtils;
 import com.ncpzs.util.DateUtil;
 import com.ncpzs.util.DensityUtil;
-import com.ncpzs.util.LogUtil;
 import com.ncpzs.util.ValidPattern;
-import com.sina.weibo.sdk.net.NetStateManager.NetStateReceive;
 import com.stay.pull.lib.PullToRefreshBase;
-import com.stay.pull.lib.PullToRefreshDragListView;
 import com.stay.pull.lib.PullToRefreshBase.OnRefreshListener;
+import com.stay.pull.lib.PullToRefreshDragListView;
 
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
-
-import android.os.AsyncTask;
-import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.util.AttributeSet;
-import android.util.DebugUtils;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.EditText;
-import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
 
 public class BatchListView extends ViewGroup {
+	
 	private Context context;
 	private ProgressDialog processDialog;
  	private List<Batch> showbatchs;
@@ -83,6 +63,7 @@ public class BatchListView extends ViewGroup {
 	private User user;
 	private BatchItemListener listerner;
 	private int villeage_id;
+	private int variety_id=-1;
 	private int stage;
 	private PullToRefreshDragListView refresh_view;
 	private DragListView listview;
@@ -267,13 +248,18 @@ public class BatchListView extends ViewGroup {
  		}else allbatchs=showbatchs = batchservice.getByVilleageid(villeage_id, stage);
 		adapter.notifyDataSetChanged();
  	}
+	public void startLoadDatas(final int stage,int villeage_id,boolean force){
+		startLoadDatas( stage,villeage_id,force, variety_id);
+	}
+	
 	/**
 	 * 准备加载数据
 	 * force:强制刷新
 	 */
-	public void startLoadDatas(final int stage,int villeage_id,boolean force) {
+	public void startLoadDatas(final int stage,int villeage_id,boolean force,int variety_id) {
 		if(!isloading){
 		  if (this.stage != stage||force) {
+			  this.variety_id=variety_id;
 			    this.villeage_id=villeage_id;
 			    uvilleagerole=uvilservice.getUserRoleInVilleage(user.getUser_id(), villeage_id);
 				isloading=true;
@@ -322,6 +308,8 @@ public class BatchListView extends ViewGroup {
     	}
    		final String loadmaxtime=endtime;
    		final String loadmintime=starttime;
+   		
+   		
  		LoadVilleageBatchThread th = new LoadVilleageBatchThread(villeage_id+"", stage,starttime,endtime);
 		th.setLiserner(new NetFinishListener() {
   			@Override
@@ -373,7 +361,12 @@ public class BatchListView extends ViewGroup {
 						}
      				} 
 				}  
- 				allbatchs=batchservice.getByVilleageid(villeage_id, stage);
+  				if(variety_id>0){
+  					allbatchs=batchservice.getByVilleageidVarietyID(villeage_id,variety_id, stage);
+  				}else{
+  					
+  					allbatchs=batchservice.getByVilleageid(villeage_id, stage);
+  				}
 				loadFinish();
 			}
 		});

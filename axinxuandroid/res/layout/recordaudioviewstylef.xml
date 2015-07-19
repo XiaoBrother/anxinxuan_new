@@ -45,11 +45,11 @@
         <LinearLayout android:id="@+id/recordaudio_timeline"
           android:layout_width="fill_parent"  android:background="@drawable/audiotimeline"
           android:layout_height="wrap_content"   
-        />
+         android:orientation = "vertical"/>
         <LinearLayout android:id="@+id/recordaudio_ball"
           android:layout_width="wrap_content"  android:background="@drawable/audiomoveball"
           android:layout_height="wrap_content"   android:layout_marginTop="-3dp" 
-          
+           android:orientation = "vertical"
         />
       </RelativeLayout>
 </LinearLayout>

@@ -68,6 +68,11 @@
 					<TextView style="@style/setting_info_text" android:text="过往查询" />
 					<ImageView style="@style/setting_arrow_img" />
 				</RelativeLayout>
+				<RelativeLayout android:id="@+id/setting_anti" android:layout_marginTop="0.5dp"  android:visibility="gone"
+					 style="@style/setting_relayout" android:background="@color/main_setting_item_bg">
+					<TextView style="@style/setting_info_text" android:text="防伪码设置" />
+					<ImageView style="@style/setting_arrow_img" />
+				</RelativeLayout>
 
 
 

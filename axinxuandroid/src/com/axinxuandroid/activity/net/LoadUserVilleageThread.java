@@ -74,6 +74,7 @@ public class LoadUserVilleageThread extends NetThread {
 								vil.setLat(object.getDouble("lat"));
 							if(object.has("lng")&&!object.isNull("lng"))
 								vil.setLng(object.getDouble("lng"));
+							vil.setUser_id(object.getInt("user_id"));
 							uv.setVilleage(vil);
 							//uv.setRole(object.getInt("work_role"));
 								uvils.add(uv);

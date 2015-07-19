@@ -1,18 +1,9 @@
 package com.axinxuandroid.service;
 
-import android.content.Context;
-import android.content.SharedPreferences;
-
-import com.axinxuandroid.data.Record;
-import com.axinxuandroid.data.User;
 import com.axinxuandroid.data.Villeage;
 import com.axinxuandroid.db.SystemDB;
-import com.axinxuandroid.db.UserDB;
-import com.axinxuandroid.db.UserVilleageDB;
 import com.axinxuandroid.db.VilleageDB;
 import com.axinxuandroid.sys.gloable.Gloable;
-import com.axinxuandroid.sys.gloable.UserCookie;
-import com.ncpzs.util.LogUtil;
 
 public class VilleageService {
   private VilleageDB villeagedb;
@@ -22,6 +13,10 @@ public class VilleageService {
   
   public Villeage getByVilleageid(int villeageid){
 	  return villeagedb.selectbyVilleageid(villeageid);
+   }
+  
+  public Villeage queryUserCreateFarm(int user_id){
+	  return villeagedb.queryUserCreateFarm(user_id);
    }
   
   

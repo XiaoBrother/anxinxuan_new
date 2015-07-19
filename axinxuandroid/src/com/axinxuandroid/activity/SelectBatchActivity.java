@@ -33,6 +33,8 @@ public class SelectBatchActivity  extends NcpZsActivity{
 	private BatchListView blistview;
 	private UserService uservice;
 	private User user;
+	private int variety_id=-1;
+	private int withOutType=-1;
 	private List<Villeage> uservilleages;
 	private Villeage selectvilleage;
 	private int stage=-1;
@@ -40,6 +42,9 @@ public class SelectBatchActivity  extends NcpZsActivity{
 	protected void onCreate(Bundle savedInstanceState) {
  		super.onCreate(savedInstanceState);
   		this.setContentView(R.layout.selectbatch);
+  		
+  		variety_id=this.getIntent().getIntExtra("varietyid", -1);
+  		withOutType=this.getIntent().getIntExtra("withOutType", -1);
         produre=(LinearLayout) this.findViewById(R.id.selectbatch_produre);
         sale=(LinearLayout) this.findViewById(R.id.selectbatch_sale);
         saleout=(LinearLayout) this.findViewById(R.id.selectbatch_saleout);
@@ -82,15 +87,29 @@ public class SelectBatchActivity  extends NcpZsActivity{
          blistview.setBatchItemClickListener(new BatchItemListener() {
   			@Override
  			public void onClickBatchItem(Batch bath) {
- 				selectBatch=bath;
- 			    Intent inte=new Intent(SelectBatchActivity.this,SelectTypeActivity.class);
-  				inte.putExtra("variety_id", (int)bath.getVariety_id());
-  				inte.putExtra("villeage_id", (int)bath.getVilleage_id());
- 				inte.putExtra("variety_name", bath.getVariety());
- 				inte.putExtra("trace_code", bath.getCode());
- 				inte.putExtra("batch_id", bath.getBatch_id()+"");
- 				inte.putExtra("needback", 1);
- 				startActivityForResult(inte, RETURN_FROM_SELECT_LABEL);
+  				selectBatch=bath;
+  				
+  				if(withOutType>0){
+  				    Intent inte=new Intent();
+  					inte.putExtra("trace_code",  selectBatch.getCode());
+  					inte.putExtra("batch_id", selectBatch.getBatch_id()+"");
+  					inte.putExtra("variety_id", (int)selectBatch.getVariety_id());
+  					inte.putExtra("villeage_id", (int)selectBatch.getVilleage_id());
+  					inte.putExtra("variety_name", selectBatch.getVariety());
+  					setResult(RESULT_OK,inte);
+  					SelectBatchActivity.this.finish();
+  				}else{
+  					 Intent inte=new Intent(SelectBatchActivity.this,SelectTypeActivity.class);
+  	  				inte.putExtra("variety_id", (int)bath.getVariety_id());
+  	  				inte.putExtra("villeage_id", (int)bath.getVilleage_id());
+  	 				inte.putExtra("variety_name", bath.getVariety());
+  	 				inte.putExtra("trace_code", bath.getCode());
+  	 				inte.putExtra("batch_id", bath.getBatch_id()+"");
+  	 				inte.putExtra("needback", 1);
+  	 				startActivityForResult(inte, RETURN_FROM_SELECT_LABEL);
+  				}
+ 			
+ 			   
  				
  			}
  			@Override
@@ -151,8 +170,13 @@ public class SelectBatchActivity  extends NcpZsActivity{
 		((TextView)sale.getChildAt(0)).setTextColor(Color.rgb(64, 64, 64));
 		saleout.setBackgroundResource(R.drawable.tabbg);
 		((TextView)saleout.getChildAt(0)).setTextColor(Color.rgb(64, 64, 64));
-		if(selectvilleage!=null)
-		blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_PRODUCE,selectvilleage.getVilleage_id(),true);
+		if(selectvilleage!=null){
+			if(variety_id>0){
+				blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_PRODUCE,selectvilleage.getVilleage_id(),true,variety_id);
+			}else{
+				blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_PRODUCE,selectvilleage.getVilleage_id(),true);
+			}
+		}
 		stage=Batch.Stage.BATCH_STAGE_PRODUCE;
       }  	
 	//加载销售数据
@@ -163,8 +187,14 @@ public class SelectBatchActivity  extends NcpZsActivity{
 		((TextView)sale.getChildAt(0)).setTextColor(Color.rgb(93, 69, 64));
 		saleout.setBackgroundResource(R.drawable.tabbg);
 		((TextView)saleout.getChildAt(0)).setTextColor(Color.rgb(64, 64, 64));
-		if(selectvilleage!=null)
-		blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_SALE,selectvilleage.getVilleage_id(),true);
+		if(selectvilleage!=null){
+			if(variety_id>0){
+				blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_SALE,selectvilleage.getVilleage_id(),true,variety_id);
+			}else{
+				blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_SALE,selectvilleage.getVilleage_id(),true);
+			}
+		}
+	//	blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_SALE,selectvilleage.getVilleage_id(),true);
 		stage=Batch.Stage.BATCH_STAGE_SALE;
     }  
 	//加载售罄数据
@@ -175,8 +205,14 @@ public class SelectBatchActivity  extends NcpZsActivity{
 		((TextView)sale.getChildAt(0)).setTextColor(Color.rgb(64, 64, 64));
 		saleout.setBackgroundColor(Color.rgb(255, 255, 255));
 		((TextView)saleout.getChildAt(0)).setTextColor(Color.rgb(93, 69, 64));
-		if(selectvilleage!=null)
-		blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_SALEOUT,selectvilleage.getVilleage_id(),true);
+		if(selectvilleage!=null){
+			if(variety_id>0){
+				blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_SALEOUT,selectvilleage.getVilleage_id(),true,variety_id);
+			}else{
+				blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_SALEOUT,selectvilleage.getVilleage_id(),true);
+			}
+		}
+		//blistview.startLoadDatas(Batch.Stage.BATCH_STAGE_SALEOUT,selectvilleage.getVilleage_id(),true);
 		stage=Batch.Stage.BATCH_STAGE_SALEOUT;
     }  	
 	

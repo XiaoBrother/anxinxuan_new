@@ -9,28 +9,16 @@ import java.util.Map.Entry;
 
 import org.json.JSONObject;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.view.inputmethod.EditorInfo;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
-import android.widget.TextView;
-
 import com.axinxuandroid.activity.handler.ConfirmDialogHandlerMethod;
 import com.axinxuandroid.activity.handler.MessageDialogHandlerMethod;
 import com.axinxuandroid.activity.handler.NcpzsHandler;
 import com.axinxuandroid.activity.handler.OnHandlerFinishListener;
 import com.axinxuandroid.activity.view.CommonBottomView;
-import com.axinxuandroid.activity.view.CommonTopView;
 import com.axinxuandroid.data.Record;
 import com.axinxuandroid.data.SystemNotice;
-import com.axinxuandroid.data.User;
 import com.axinxuandroid.data.SystemNotice.SystemNoticeType;
+import com.axinxuandroid.data.User;
+import com.axinxuandroid.data.Villeage;
 import com.axinxuandroid.service.RecordService;
 import com.axinxuandroid.service.SharedPreferenceService;
 import com.axinxuandroid.service.SystemNoticeService;
@@ -38,9 +26,15 @@ import com.axinxuandroid.service.UserService;
 import com.axinxuandroid.sys.gloable.Gloable;
 import com.ncpzs.util.BitmapUtils;
 import com.ncpzs.util.DateUtil;
-import com.ncpzs.util.DensityUtil;
-import com.ncpzs.util.EANValidate;
-import com.ncpzs.util.LogUtil;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 /**
    * @author hubobo
  *
@@ -57,6 +51,7 @@ public class SettingActivity extends NcpZsActivity{
  	private RelativeLayout setting_visithistory;//过往查询
  	private RelativeLayout setting_resetpwd;//重设密码
  	private RelativeLayout setting_usercomment;//用户评论
+ 	private RelativeLayout setting_anti;//防伪码
 	private ImageView userimg,recordnotice,versionotice;
 	private TextView draftnotice;
 	private TextView username;
@@ -86,6 +81,14 @@ public class SettingActivity extends NcpZsActivity{
         setting_userfavorite=(RelativeLayout) this.findViewById(R.id.setting_userfavorite);
         setting_resetpwd=(RelativeLayout) this.findViewById(R.id.setting_resetpwd);
         setting_usercomment=(RelativeLayout) this.findViewById(R.id.setting_usercomment);
+        setting_anti=(RelativeLayout) this.findViewById(R.id.setting_anti);
+        
+        //如果登录账号没有创建农场则隐藏防伪管理
+         Villeage v= uservice.getUserCreateVilleage(user.getUser_id());
+         if(v !=null){
+        	 setting_anti.setVisibility(View.VISIBLE);
+         }
+        
         exit=(Button) this.findViewById(R.id.setting_exit);
         username=(TextView) this.findViewById(R.id.setting_username);
         userimg=(ImageView) this.findViewById(R.id.setting_userimg);
@@ -168,6 +171,12 @@ public class SettingActivity extends NcpZsActivity{
  				toIntent(UserCommentActivity.class,null);				
 			}
 		});
+        setting_anti.setOnClickListener(new OnClickListener() {
+        	@Override
+        	public void onClick(View v) {
+        		toIntent(AntiFakeActivity.class,null);				
+        	}
+        });
          if(user!=null){
         	username.setText(user.getUser_name());
         	if(user.getLocal_imgurl()!=null)

@@ -115,4 +115,13 @@ public class HttpUrlConstant {
   	public static final String LOAD_CATEGORY="phone/category";
   //…æ≥˝≈©≥°Õº∆¨
   	public static final String DELETE_VILLEAGE_PHOTO="phone/deletephoto";
+  	
+	//∑¿Œ±…Ë÷√
+	public static final String LOAD_ANTIFAKE_QUERYSET="phone/queryset";
+	//¥¢¥Ê…Ë÷√
+	public static final  String SAVE_ANTIFAKE_SAVESET = "phone/saveset";
+	//¥¢¥Ê∑¿Œ±¬Î…˙≥…
+	public static final  String SAVE_ANTIFAKE_PUBLISHBATCH = "phone/saveScodebatch";
+	//¥¢¥Ê∑¿Œ±¬Î…˙≥…
+	public static final  String Load_ANTIFAKE_BATCHLIST = "phone/scodeBatchList";
 }
