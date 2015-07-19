@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical" android:background="#fff"
+	 >
+	 <LinearLayout android:layout_width="fill_parent"  android:id="@+id/antifake_bathclist_top_l" 
+		android:layout_height="fill_parent" android:orientation="vertical"
+		android:layout_marginBottom="65dp">
+		<com.axinxuandroid.activity.view.CommonTopView
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+		    anxinxuan:lefttext="返回"
+			android:id="@+id/antifake_bathclist_top" anxinxuan:title="防伪码列表" />
+		
+<ListView  android:id="@+id/antifake_batchlist_lv"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:divider="@null" 
+    />
+	</LinearLayout>
+
+
+	<com.axinxuandroid.activity.view.AntifakeView
+		android:id="@+id/antifake_batchlist_bottom" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" /> 
+</RelativeLayout>

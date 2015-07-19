@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:background="@color/page_bg_color">
+
+    	<com.axinxuandroid.activity.view.CommonTopView
+		android:id="@+id/antifake_publishbath_top" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" anxinxuan:title="防伪码生成"
+		anxinxuan:lefttext="取消" anxinxuan:righttext="保存" />
+
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+		android:layout_below="@id/antifake_publishbath_top" android:orientation="vertical"
+		android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+
+		<RelativeLayout android:id="@+id/antifake_selectvariety"
+			android:layout_width="fill_parent" android:layout_height="40dp"
+			android:layout_marginTop="10dp" android:gravity="center_vertical"
+			android:clickable="true" android:background="@drawable/shape_corners">
+			<TextView android:id="@+id/antifake_varietyname"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:textSize="16sp" android:textColor="#262223" android:textColorHint="#262223"
+				android:background="#ffffff"   android:gravity="center_vertical"  android:hint="选择品种" android:paddingLeft="5dp">
+			</TextView>
+			<ImageView style="@style/setting_arrow_img"
+				android:layout_marginRight="5dp"   />
+		</RelativeLayout>
+		
+		<RelativeLayout android:id="@+id/antifake_selectbatch"
+			android:layout_width="fill_parent" android:layout_height="40dp"
+			android:layout_marginTop="10dp" android:gravity="center_vertical"
+			android:clickable="true" android:background="@drawable/shape_corners">
+			<TextView android:id="@+id/antifake_batch"
+				android:layout_height="fill_parent" android:layout_width="fill_parent"
+				android:textSize="16sp" android:textColor="#262223" android:textColorHint="#262223"
+				android:background="#ffffff"   android:gravity="center_vertical" android:hint="选择批次" android:paddingLeft="5dp">
+			</TextView>
+			<ImageView style="@style/setting_arrow_img"
+				android:layout_marginRight="5dp"   />
+		</RelativeLayout>
+				<LinearLayout
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="10dp" android:gravity="center_vertical"
+			android:clickable="true">
+			<TextView android:layout_width="wrap_content" android:textColor="#262223"
+				android:layout_height="wrap_content" android:text="包装日期：" android:textSize="16sp" android:paddingLeft="5dp"
+				 />
+			<EditText android:layout_width="match_parent"  android:id="@+id/antifake_batchtime"
+				android:layout_height="wrap_content"  android:textSize="16sp" android:textColor="#262223"
+				 />
+		</LinearLayout>
+				<LinearLayout
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="10dp" android:gravity="center_vertical"
+			android:clickable="true" >
+			<TextView android:layout_width="wrap_content" android:textColor="#262223"
+				android:layout_height="wrap_content" android:text="防伪码数：" android:textSize="16sp" android:paddingLeft="5dp"
+				 />
+			<EditText android:layout_width="match_parent"  android:id="@+id/antifake_tcount"
+				android:layout_height="wrap_content" android:digits="1234567890"  android:textSize="16sp" android:textColor="#262223"  android:hint="单次生成上限为5000个"
+				 />
+		</LinearLayout>
+					<LinearLayout
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="10dp" android:gravity="center_vertical"
+			android:clickable="true" >
+			<TextView android:layout_width="wrap_content" android:textColor="#262223"
+				android:layout_height="wrap_content" android:text="详细描述：" android:textSize="16sp" android:paddingLeft="5dp"
+				 />
+		</LinearLayout>
+						<LinearLayout
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_marginTop="10dp" android:gravity="center_vertical"
+			android:clickable="true">
+		<EditText android:layout_width="match_parent"  android:id="@+id/antifake_bdesc"
+				android:layout_height="135dp"   android:textSize="16sp" android:textColor="#262223"  
+				 />
+			</LinearLayout>
+	</LinearLayout>
+
+<com.axinxuandroid.activity.view.AntifakeView
+		android:id="@+id/antifake_Publicbatch_bottom" android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:layout_alignParentBottom="true" /> 
+
+</RelativeLayout>

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical" >
+
+        <com.axinxuandroid.activity.view.CommonTopView
+            android:id="@+id/antifake_queryset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            anxinxuan:lefttext="返回"
+            anxinxuan:righttext="保存"
+            anxinxuan:title="防伪查询页设置" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|left"
+                android:orientation="vertical"
+                android:text="查询标题："
+                android:textColor="#83593a"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/antifake_stitle"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="该信息项会显示在查询页顶部"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|left"
+                android:text="底部信息："
+                android:textColor="#83593a"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/antifake_bottominf"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="该信息项会显示在查询页底部"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|left"
+                android:text="微博链接："
+                android:textColor="#83593a"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/antifake_sinaweibo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="用于进入您的微博"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|left"
+                android:text="微信链接："
+                android:textColor="#83593a"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/antifake_weixin"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="用于进入您的微信"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="网店链接："
+                android:textColor="#83593a"
+                 android:gravity="center_vertical|left"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/antifake_weidian"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:hint="方便客户进入网店消费"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_corners"
+            android:paddingLeft="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical|left"
+                android:text="联系电话："
+                android:textColor="#83593a"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/antifake_tel"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@null"
+                android:gravity="center_vertical|left"
+                android:hint="方便更多客户联系您"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+   <com.axinxuandroid.activity.view.AntifakeView
+        android:id="@+id/antifake_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" /> 
+
+</RelativeLayout>

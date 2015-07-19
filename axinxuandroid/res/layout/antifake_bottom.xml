@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="65dp" android:background="#000"
+	xmlns:anxinxuan="http://schemas.android.com/apk/res/com.axinxuandroid.activity"
+	android:orientation="vertical">
+	<com.axinxuandroid.activity.view.TriangleView
+		android:layout_width="fill_parent" android:layout_height="0dp"
+		android:id="@+id/commonbtm_triangleview">
+	</com.axinxuandroid.activity.view.TriangleView>
+
+	<LinearLayout android:layout_width="fill_parent"   android:layout_marginTop="10dp"
+		android:layout_height="55dp" android:orientation="horizontal"
+		>
+		
+	    <LinearLayout android:layout_width="fill_parent" 
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"   android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/antifake_queryset"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:clickable="false" android:scaleType="centerInside"
+					android:src="@drawable/quik_record" />
+
+				<TextView android:id="@+id/antifake_queryset_value"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="查询设置" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+ 		</LinearLayout>
+	    
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent"  android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/antifake_publishbatch"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:clickable="false" android:scaleType="centerInside"
+					android:src="@drawable/anti_publickbatch" />
+
+				<TextView android:id="@+id/antifake_publishbatch_value"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="防伪生成" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+ 		</LinearLayout>
+
+		
+
+		<LinearLayout android:layout_width="fill_parent"  
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent" android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/antifake_batchlist"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:clickable="false" android:scaleType="centerInside"
+					android:src="@drawable/anti_batchlist" />
+
+				<TextView android:id="@+id/antifake_batchlist_value"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="防伪列表" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+		</LinearLayout>
+		
+		
+				<LinearLayout android:layout_width="fill_parent"  
+			android:layout_height="fill_parent" android:gravity="center"
+			android:orientation="horizontal" android:layout_weight="1">
+			<LinearLayout android:layout_width="fill_parent" android:clickable="true"
+				android:gravity="center" android:orientation="vertical"
+				android:layout_height="fill_parent">
+				<ImageView android:id="@+id/antifake_img_more"
+					android:layout_width="30dp" android:layout_height="30dp"
+					android:clickable="false" android:scaleType="centerInside"
+					android:src="@drawable/mycion" />
+
+				<TextView android:id="@+id/antifake_text_more"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:text="我的设置" android:textColor="#fff" android:textSize="14sp" />
+			</LinearLayout>
+		</LinearLayout>
+	</LinearLayout>
+
+
+
+</LinearLayout>
